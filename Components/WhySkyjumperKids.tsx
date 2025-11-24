@@ -2,28 +2,28 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
-// Import Swiper styles
+// Import styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 export default function WhySkyjumperKids() {
   const items = [
     {
-      img: "https://images.unsplash.com/photo-1590845947670-c009801ffa74?auto=format&fit=crop&w=600&q=80",
+      img: "/images/2kids-imgnew.png",
       title: "KIDS-ONLY SPACE",
       age: "(1–13 YRS)",
       desc: "A dedicated world designed exclusively for young children.",
     },
     {
-      img: "https://images.unsplash.com/photo-1629385703143-9acb33c364a1?auto=format&fit=crop&w=600&q=80",
+      img: "/images/2kids-imgnew.png",
       title: "SAFE PLAY AREA",
       age: "(CERTIFIED)",
       desc: "International safety standards with trained staff.",
     },
     {
-      img: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80",
+      img: "/images/2kids-imgnew.png",
       title: "BIRTHDAY PARTIES",
       age: "(FUN & UNIQUE)",
       desc: "The perfect place to celebrate unforgettable birthdays.",
@@ -46,51 +46,108 @@ export default function WhySkyjumperKids() {
       </h3>
       <div className="w-24 h-[3px] bg-white mx-auto mt-2"></div>
 
-      {/* Carousel */}
-      <div className="mt-10">
+      {/* MOBILE CAROUSEL */}
+      <div className="mt-10 block md:hidden">
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
+          autoplay={{
+            delay: 1800,
+            disableOnInteraction: false,
+          }}
           spaceBetween={20}
           slidesPerView={1.2}
           centeredSlides={true}
-          breakpoints={{
-            768: {
-              slidesPerView: 3,
-            },
-          }}
+          loop={true}
           className="pb-10"
         >
           {items.map((item, i) => (
             <SwiperSlide key={i} className="flex justify-center">
-              <div className="bg-[#1a0033]/70 backdrop-blur-xl rounded-3xl p-4 w-[280px] border border-white/20 shadow-xl">
-                
+              <div className="bg-[#1a0033]/70 backdrop-blur-xl rounded-3xl w-[280px] border border-white/80 shadow-xl">
+
                 {/* Image */}
-                <div className="rounded-2xl overflow-hidden mb-4 border border-white/20">
+                <div className="overflow-hidden mb-4">
                   <Image
                     src={item.img}
                     alt={item.title}
-                    width={300}
+                    width={350}
                     height={200}
-                    className="w-full h-[180px] object-cover"
+                    className="w-full h-[200px] object-cover"
                   />
                 </div>
 
-                {/* Text */}
-                <h4 className="text-white text-lg font-extrabold leading-tight">
-                  {item.title}
-                </h4>
+                {/* Text Box */}
+                <div className="p-3 -mt-7">
+                  <div className="border border-white/40 rounded-2xl p-4">
+                    <h4 className="text-white text-lg font-extrabold leading-tight">
+                      {item.title}
+                    </h4>
 
-                <p className="text-[#ff6a34] text-sm font-bold mt-1">
-                  {item.age}
-                </p>
+                    <p className="text-[#ff6a34] text-sm font-bold mt-1">
+                      {item.age}
+                    </p>
 
-                <p className="text-gray-300 text-sm mt-2">{item.desc}</p>
+                    <p className="text-gray-300 text-sm mt-2">{item.desc}</p>
+                  </div>
+                </div>
+
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
+
+      {/* DESKTOP — 3 COLUMN CAROUSEL */}
+
+    <div className="hidden md:block mt-12 w-full max-w-7xl mx-auto px-10">
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{ clickable: true }}
+        className="pb-10"
+      >
+        {items.map((item, i) => (
+          <SwiperSlide key={i} className="flex justify-center">
+            <div className="bg-[#1a0033]/70 backdrop-blur-xl rounded-3xl w-[280px] border border-white/80 shadow-xl">
+
+              {/* Image */}
+              <div className="overflow-hidden mb-4">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={350}
+                  height={200}
+                  className="w-full h-[200px] object-cover"
+                />
+              </div>
+
+              {/* Text Box */}
+              <div className="p-3 -mt-7">
+                <div className="border border-white/40 rounded-2xl p-4">
+                  <h4 className="text-white text-lg font-extrabold leading-tight">
+                    {item.title}
+                  </h4>
+
+                  <p className="text-[#ff6a34] text-sm font-bold mt-1">
+                    {item.age}
+                  </p>
+
+                  <p className="text-gray-300 text-sm mt-2">{item.desc}</p>
+                </div>
+              </div>
+
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+
     </section>
   );
 }

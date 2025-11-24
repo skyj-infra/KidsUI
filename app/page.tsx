@@ -1,16 +1,25 @@
-import HeroSection from "@/Components/HeroSection";
-import AboutUs from "@/Components/About-Us";
-import WhySkyjumperKids from "@/Components/WhySkyjumperKids";
+
+import HomePage from "./HomePage";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <HeroSection />
-      <AboutUs />
-      <WhySkyjumperKids />
-      <h1 className="font-joyful text-4xl">Skyjumper Kids</h1>
-      <p className="font-poppins">This is Poppins text</p>
-      <h2 className="font-tungsten text-5xl">WHY SKYJUMPER KIDS</h2>
+
+    <HomePage />
+
+    {/* <div className="text-center">
+      <div className="p-10 space-y-10">
+        <h1 className="font-superjoyful text-6xl text-black">
+          Super Joyful – Skyjumper Kids
+        </h1>
+        <p className="font-poppins text-4xl text-black">
+          Poppins – Skyjumper Kids
+        </p>
+        <h2 className="font-tungsten text-7xl text-black tracking-wide">
+          Tungsten – Skyjumper Kids
+        </h2>
+      </div>
+    </div> */}
 
     </div>
   );
