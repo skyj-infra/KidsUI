@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function KidsBirthdaySection() {
   return (
     <section className="w-full py-16 bg-white">
-      <div className="max-w-5xl mx-auto px-4 text-center">
+      <div className="max-w-[1500px] mx-auto px-4 text-center">
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-extrabold text-black tracking-wide">
@@ -30,8 +30,8 @@ export default function KidsBirthdaySection() {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center">
 
           {/* CARD 1 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-[165px] sm:w-[180px] md:w-[200px]">
-            <div className="relative w-full h-40">
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-[165px] lg:w-[390px]">
+            <div className="relative w-full h-40 lg:h-[430px]">
               <Image
                 src="/images/kidsbday.png"
                 alt="Dedicated Party Area"
@@ -45,23 +45,23 @@ export default function KidsBirthdaySection() {
           </div>
 
           {/* CARD 2 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-[165px] sm:w-[180px] md:w-[200px]">
-            <div className="relative w-full h-40">
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-[165px] lg:w-[390px]">
+            <div className="relative w-full h-40 lg:h-[430px]">
               <Image
                 src="/images/kidsbday.png"
-                alt="Hassle-Free for Parents"
+                alt="Dedicated Party Area"
                 fill
                 className="object-cover rounded-t-3xl"
               />
             </div>
             <p className="py-3 text-sm font-semibold text-[#ff7a00] text-center px-2">
-              Hassle-Free for Parents
+              Dedicated Party Area
             </p>
           </div>
 
           {/* CARD 3 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-[165px] sm:w-[180px] md:w-[200px]">
-            <div className="relative w-full h-40">
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg w-[165px] lg:w-[390px]">
+            <div className="relative w-full h-40 lg:h-[430px]">
               <Image
                 src="/images/kidsbday.png"
                 alt="Customizable Packages"

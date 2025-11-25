@@ -93,43 +93,43 @@ export default function ParentsZone() {
       </div>
 
       {/* DESKTOP LAYOUT (3 COLUMNS) */}
-      <div className="hidden lg:grid grid-cols-3 gap-8 max-w-5xl mx-auto mt-10">
+      <div className="hidden lg:grid grid-cols-3 gap-8 max-w-[1500px] mx-auto mt-10">
 
         {/* CARD 1 */}
-        <div className="bg-orange-500 rounded-3xl p-5 shadow-lg text-white h-[380px] flex flex-col justify-between">
+        <div className="bg-orange-500 rounded-3xl p-5 shadow-lg text-white h-[430px] flex flex-col justify-between">
           <div>
             <h4 className="text-xl font-bold leading-tight">THE PLAY BUDDY</h4>
             <p className="text-sm mt-1 opacity-90 leading-tight">
               JUMP IN AND ROLL WITH THE LITTLE ONES.
             </p>
           </div>
-          <div className="relative w-full h-[210px] rounded-3xl overflow-hidden">
+          <div className="relative w-full mb-[-1.2rem] ml-[1.3rem] h-[290px] rounded-3xl overflow-hidden">
             <Image src={kidsImage} alt="Kids" fill className="object-cover object-bottom" />
           </div>
         </div>
 
         {/* CARD 2 */}
-        <div className="bg-white rounded-3xl p-5 shadow-lg border border-gray-200 h-[380px] flex flex-col justify-between">
+        <div className="bg-white rounded-3xl p-5 shadow-lg border border-gray-200 h-[430px] flex flex-col justify-between">
           <div>
             <h4 className="text-xl font-bold text-black leading-tight">THE CHILL MODE</h4>
             <p className="text-sm mt-1 text-gray-700 leading-tight">
               SIT BACK IN OUR CAFÉ — COFFEE, WORK, GOSSIP… YOUR CHOICE.
             </p>
           </div>
-          <div className="relative w-full h-[210px] rounded-3xl overflow-hidden">
+          <div className="relative w-full mb-[-1.2rem] ml-[1.3rem] h-[290px] rounded-3xl overflow-hidden">
             <Image src={kidsImage} alt="Kids" fill className="object-cover object-bottom" />
           </div>
         </div>
 
         {/* CARD 3 */}
-        <div className="bg-orange-500 rounded-3xl p-5 shadow-lg text-white h-[380px] flex flex-col justify-between">
+        <div className="bg-orange-500 rounded-3xl p-5 shadow-lg text-white h-[430px] flex flex-col justify-between">
           <div>
             <h4 className="text-xl font-bold leading-tight">THE FREE BIRD</h4>
             <p className="text-sm mt-1 opacity-90 leading-tight">
               DROP THEM, STEP OUT, ENJOY THE MALL. WE’VE GOT THE KIDS COVERED.
             </p>
           </div>
-          <div className="relative w-full h-[210px] rounded-3xl overflow-hidden">
+          <div className="relative w-full mb-[-1.2rem] ml-[1.3rem] h-[290px] rounded-3xl overflow-hidden">
             <Image src={kidsImage} alt="Kids" fill className="object-cover object-bottom" />
           </div>
         </div>

@@ -20,7 +20,7 @@ export default function OtherBrands() {
       </div>
 
       {/* LOGO GRID */}
-      <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1500px] mx-auto">
         {/* Box 1 */}
         <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center">
           <div className="relative w-28 h-28">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutKidsSection() {
   return (
-    <section className="w-full max-w-5xl mx-auto py-16 px-6 text-center md:text-left">
+    <section className="w-full max-w-[1500px] mx-auto py-16 px-6 text-center md:text-left">
       
       {/* Wrapper for desktop alignment */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
@@ -38,7 +38,7 @@ export default function AboutKidsSection() {
           {/* Kids Photo */}
           <div className="w-[260px] md:w-[330px] transform rotate-[-6deg] shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1590845947670-c009801ffa74?auto=format&fit=crop&w=600&q=80"
+              src="/images/about-kids-img.png"
               width={400}
               height={400}
               alt="Kids Activity"
@@ -49,7 +49,7 @@ export default function AboutKidsSection() {
           {/* Astronaut Graphic */}
           <div className="absolute right-[-20px] bottom-[-40px] md:right-[-40px] md:bottom-[-20px] w-[110px] md:w-[150px]">
             <Image
-              src="https://pngimg.com/uploads/astronaut/astronaut_PNG35.png"
+              src="/images/characters/Space Character 9.png"
               width={300}
               height={300}
               alt="Astronaut Rocket"

@@ -36,14 +36,14 @@ export default function BlogsSection() {
 
       {/* Blog Cards (Responsive Grid) */}
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        className="max-w-[1500px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {blogs.map((item, index) => (
           <div
             key={index}
             className="bg-white rounded-3xl p-3 shadow-xl flex gap-3"
           >
             {/* Blog Image */}
-            <div className="relative w-24 h-24 rounded-2xl overflow-hidden shrink-0">
+            <div className="relative w-24 h-24 lg:w-54 lg:h-54 rounded-2xl overflow-hidden shrink-0">
               <Image
                 src={blogImage}
                 alt="Blog Image"
@@ -53,7 +53,7 @@ export default function BlogsSection() {
             </div>
 
             {/* Blog Content */}
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-center">
               <div>
                 <h4 className="text-black text-lg font-bold">{item.title}</h4>
                 <p className="text-gray-700 text-sm mt-1">{item.desc}</p>

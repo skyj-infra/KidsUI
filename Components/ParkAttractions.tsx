@@ -66,9 +66,21 @@ export default function ParkAttractions() {
       title: "Laser War",
       image: "/images/parkatrack-img/slider-img2.png",
     },
+     {
+      title: "Sky Lounge Cafe",
+      image: "/images/parkatrack-img/slider-img1.png",
+    },
     {
       title: "3D Art",
       image: "/images/parkatrack-img/slider-img3.png",
+    },
+    {
+      title: "Laser War",
+      image: "/images/parkatrack-img/slider-img2.png",
+    },
+    {
+      title: "Laser War",
+      image: "/images/parkatrack-img/slider-img2.png",
     },
   ];
 
@@ -86,6 +98,18 @@ export default function ParkAttractions() {
       title: "Birthday Arena",
       image: "/images/parkatrack-img/slider-img6.png",
     },
+    {
+      title: "Trampoline",
+      image: "/images/parkatrack-img/slider-img5.png",
+    },
+    {
+      title: "Kids Zone",
+      image: "/images/parkatrack-img/slider-img4.png",
+    },
+    {
+      title: "Trampoline",
+      image: "/images/parkatrack-img/slider-img5.png",
+    },
   ];
 
   return (
@@ -102,7 +126,7 @@ export default function ParkAttractions() {
       </div>
 
       {/* Slider Section */}
-      <div className="w-full md:w-3/5 mx-auto flex flex-col justify-center py-6 md:pt-12 overflow-hidden relative">
+      <div className="w-full max-w-[1500px] mx-auto flex flex-col justify-center py-6 md:pt-12 overflow-hidden relative">
         <div className="space-y-6 relative">
 
           {/* First Row */}
