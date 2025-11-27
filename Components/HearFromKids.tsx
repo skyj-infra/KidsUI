@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
-
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -16,9 +16,24 @@ export default function HearFromKids() {
 
   return (
     <section
-      className="w-full py-12 px-5 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
+      className="w-full py-12 px-5 py-20 h-[1050px] pt-[12rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
+
+            {/* 🔥 Astronaut — exact position like screenshot 1 */}
+            <div className=" w-[250px] mt-[-18rem] transform rotate-[90deg]  scale-x-[-1]
+                absolute left-1/2 -translate-x-1/2   /* mobile center over cloud */
+                md:top-6 md:left-10 md:-translate-x-0            /* desktop corner */
+              ">
+              <Image
+                src="/images/characters/Space Character 4.png"
+                width={250}
+                height={250}
+                alt="astronaut"
+                className="drop-shadow-xl select-none pointer-events-none"
+              />
+            </div>
+
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-white text-2xl font-bold">HEAR FROM</h2>
@@ -73,6 +88,22 @@ export default function HearFromKids() {
       {/* Pagination bullets */}
       <div className="kids-pagination mt-6 flex justify-center"></div>
       </div>
+
+      {/* ========== BOTTOM ASTRONAUT (hide on /locations) ========== */}
+              <div
+                className="w-[250px]
+                  absolute left-1/2 -translate-x-1/2 translate-y-10
+                  lg:bottom-10 lg:right-10 lg:left-auto lg:translate-x-0 lg:translate-y-0
+                "
+              >
+                <Image
+                  src="/images/characters/Space Character 7.png"
+                  alt="astronaut"
+                  width={250}
+                  height={250}
+                  className="mt-8"
+                />
+              </div>
     </section>
   );
 }

@@ -113,7 +113,7 @@ export default function ParkAttractions() {
   ];
 
   return (
-    <section className="w-full py-12 bg-white">
+    <section className="w-full pt-24 pb-16 bg-white">
       {/* Heading */}
       <div className="text-center mb-8">
         <h2 className="font-tungsten text-4xl text-black tracking-wide">

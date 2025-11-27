@@ -22,8 +22,8 @@ export default function BlogsSection() {
 
   return (
     <section
-      className="w-full py-12 px-5 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
+      className="w-full py-12 py-20 px-5 h-[1050px] pt-[10rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
       {/* Heading */}
       <div className="text-center mb-6">
@@ -73,6 +73,22 @@ export default function BlogsSection() {
           VIEW ALL →
         </button>
       </div>
+
+      {/* ========== BOTTOM ASTRONAUT (hide on /locations) ========== */}
+        <div
+          className="w-[190px]
+            absolute left-1/2 -translate-x-1/2 translate-y-10
+            lg:bottom-10 lg:right-10 lg:left-auto lg:translate-x-0 lg:translate-y-0
+          "
+        >
+          <Image
+            src="/images/characters/Space Character 2.png"
+            alt="astronaut"
+            width={250}
+            height={250}
+            className="-mt-4"
+          />
+        </div>
     </section>
   );
 }

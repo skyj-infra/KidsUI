@@ -4,7 +4,8 @@ import Image from "next/image";
 
 export default function AboutKidsSection() {
   return (
-    <section className="w-full max-w-[1500px] mx-auto py-16 px-6 text-center md:text-left">
+    <section className="w-full max-w-[1500px] mx-auto pt-16 lg:py-16 mb-[-13rem] md:mb-[-8rem] lg:mb-[1rem] px-6 text-center md:text-left"
+      >
       
       {/* Wrapper for desktop alignment */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
@@ -36,7 +37,7 @@ export default function AboutKidsSection() {
         <div className="relative md:w-1/2 flex justify-center md:justify-end">
 
           {/* Kids Photo */}
-          <div className="w-[260px] md:w-[330px] transform rotate-[-6deg] shadow-xl">
+          <div className="w-[240px] -ml-24 md:w-[330px] transform rotate-[-6deg] shadow-xl">
             <Image
               src="/images/about-kids-img.png"
               width={400}
@@ -46,15 +47,17 @@ export default function AboutKidsSection() {
             />
           </div>
 
-          {/* Astronaut Graphic */}
-          <div className="absolute right-[-20px] bottom-[-40px] md:right-[-40px] md:bottom-[-20px] w-[110px] md:w-[150px]">
-            <Image
-              src="/images/characters/Space Character 9.png"
-              width={300}
-              height={300}
-              alt="Astronaut Rocket"
-            />
-          </div>
+        {/* Astronaut Graphic */}
+        <div className="absolute right-[-10px] bottom-[100px] transform rotate-[8deg] 
+                        md:right-[-40px] md:bottom-[-20px] w-[200px] md:w-[250px]">
+          <Image
+            src="/images/characters/Space Character 9.png"
+            width={300}
+            height={300}
+            alt="Astronaut Rocket"
+            className="object-contain"
+          />
+        </div>
 
         </div>
 

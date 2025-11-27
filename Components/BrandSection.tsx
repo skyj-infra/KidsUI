@@ -6,10 +6,10 @@ export default function OtherBrands() {
   const logo = "/images/skyjup-logo.png";
 
   return (
-    <section className="w-full py-12 px-5 bg-white">
+    <section className="w-full py-12 mt-8 px-5 bg-white">
 
       {/* Heading */}
-      <div className="text-center mb-6">
+      <div className="text-center pt-10 mb-6">
         <h2 className="text-black text-2xl font-extrabold tracking-wide">
           OUR OTHER
         </h2>

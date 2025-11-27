@@ -45,19 +45,18 @@ export default function WhySkyjumperKids() {
 
   return (
     <section
-      className="py-12 px-5  text-center"
-      style={{
-        backgroundImage: "url('/images/bg-whykids.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="h-[1200px] pt-[18rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
-      {/* Heading */}
-      <h2 className="text-white text-4xl font-extrabold">WHY</h2>
-      <h3 className="text-[#ff6a34] text-4xl font-extrabold -mt-2">
-        Skyjumper Kids
-      </h3>
-      <div className="w-24 h-[3px] bg-white mx-auto mt-2"></div>
+      
+      <div className="mt-8">
+        {/* Heading */}
+        <h2 className="text-white text-4xl font-extrabold">WHY</h2>
+        <h3 className="text-[#ff6a34] text-4xl font-extrabold -mt-2">
+          Skyjumper Kids
+        </h3>
+        <div className="w-24 h-[3px] bg-white mx-auto mt-2"></div>
+      </div>
 
       {/* MOBILE CAROUSEL */}
       <div className="mt-10 max-w-[1500px] mx-auto block md:hidden">
@@ -115,6 +114,16 @@ export default function WhySkyjumperKids() {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* 🚀 ASTRONAUT — Added Only for Mobile */}
+        <div className="absolute w-[350px] left-1/2 -translate-x-1/2 block md:hidden">
+          <Image
+            src="/images/characters/Space Character 12.png"
+            alt="Astronaut"
+            width={350}
+            height={400}
+            className="mt-28 -ml-6"
+          />
+        </div>
 
       </div>
 

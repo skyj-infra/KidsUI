@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function ParentsZone() {
   const kidsImage = "/images/2kids-imgnew.png";
-  const astronaut = "/images/Astro/astro-img3.png";
+  const astronaut = "/images/characters/Space Character 8.png";
 
   return (
-    <section className="w-full bg-white py-10 px-5 relative">
+    <section className="w-full bg-white py-20 px-5 relative">
 
       {/* HEADING */}
-      <div className="text-center mb-10">
+      <div className="text-center mb-10 ">
         <h2 className="text-black text-3xl font-extrabold tracking-wide">
           PARENTS
         </h2>
@@ -137,12 +137,12 @@ export default function ParentsZone() {
       </div>
 
       {/* BOTTOM ASTRONAUT */}
-      <div className="absolute -bottom-4 right-0 w-54">
+      <div className="absolute -bottom-4 -mb-20 right-0 w-[230px]">
         <Image
           src={astronaut}
           alt="Astronaut"
-          width={180}
-          height={180}
+          width={230}
+          height={230}
           className="object-contain"
         />
       </div>

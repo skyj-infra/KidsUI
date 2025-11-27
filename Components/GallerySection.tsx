@@ -11,7 +11,7 @@ export default function GallerySection() {
   const img = "/images/kidsbday.png";
 
   return (
-    <section className="w-full py-12 px-5 bg-white">
+    <section className="w-full py-20 mt-20 mb-20 px-5 bg-white">
       {/* Heading */}
       <div className="text-center mb-6">
         <h2 className="text-black text-2xl font-extrabold tracking-wide">
@@ -81,32 +81,41 @@ export default function GallerySection() {
         </Swiper>
       </div>
 
-      {/* ========================================================= */}
-      {/* ===================   DESKTOP GRID   ==================== */}
-      {/* ========================================================= */}
-      <div className="hidden lg:grid grid-cols-2 gap-6 max-w-6xl mx-auto">
+    {/* ===================   DESKTOP 3 COLUMN GRID   ==================== */}
+    <div className="hidden lg:grid grid-cols-3 gap-6 max-w-[1500px] mx-auto">
 
-        {/* LEFT Column */}
-        <div className="flex flex-col gap-6">
-          <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
-            <Image src={img} fill alt="" className="object-cover" />
-          </div>
-          <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
-            <Image src={img} fill alt="" className="object-cover" />
-          </div>
+      {/* Column 1 */}
+      <div className="flex flex-col gap-6">
+        <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
+          <Image src={img} fill alt="" className="object-cover" />
         </div>
-
-        {/* RIGHT Column */}
-        <div className="flex flex-col gap-6">
-          <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
-            <Image src={img} fill alt="" className="object-cover" />
-          </div>
-          <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
-            <Image src={img} fill alt="" className="object-cover" />
-          </div>
+        <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
+          <Image src={img} fill alt="" className="object-cover" />
         </div>
-
       </div>
+
+      {/* Column 2 */}
+      <div className="flex flex-col gap-6">
+        <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
+          <Image src={img} fill alt="" className="object-cover" />
+        </div>
+        <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
+          <Image src={img} fill alt="" className="object-cover" />
+        </div>
+      </div>
+
+      {/* Column 3 */}
+      <div className="flex flex-col gap-6">
+        <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
+          <Image src={img} fill alt="" className="object-cover" />
+        </div>
+         <div className="relative w-full h-72 rounded-2xl overflow-hidden shadow-md">
+          <Image src={img} fill alt="" className="object-cover" />
+        </div>
+      </div>
+
+    </div>
+
     </section>
   );
 }

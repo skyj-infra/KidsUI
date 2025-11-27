@@ -9,13 +9,13 @@ export default function OtherEvents() {
 
   return (
     <section
-      className="relative w-full bg-cover bg-center py-20"
-      style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
+      className="relative w-full py-20 h-[1050px] pt-[6rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
 
       {/* ========== TOP ASTRONAUT (conditional) ========== */}
       <div
-        className="
+        className=" w-[230px]
           absolute top-0 left-1/2 -translate-x-1/2 -translate-y-10
           lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0
         "
@@ -24,11 +24,12 @@ export default function OtherEvents() {
           src={
             isLocations
               ? "/images/Astro/astro-img4.png" // ONLY on /locations
-              : "/images/Astro/astro-img2.png" // default
+              : "/images/characters/Space Character 3.png" // default
           }
           alt="astronaut"
-          width={250}
-          height={250}
+          width={230}
+          height={230}
+          className="-mt-8"
         />
       </div>
 
@@ -46,7 +47,7 @@ export default function OtherEvents() {
       {/* ========= CARDS GRID ========= */}
       <div
         className="
-          mt-14 mb-14 px-6 gap-8 
+          mt-24 mb-14 px-6 gap-10 
           grid grid-cols-1 
           md:grid-cols-2 
           max-w-4xl md:max-w-6xl mx-auto
@@ -109,13 +110,13 @@ export default function OtherEvents() {
       {/* ========== BOTTOM ASTRONAUT (hide on /locations) ========== */}
       {!isLocations && (
         <div
-          className="
+          className="w-[250px]
             absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-10
             lg:bottom-10 lg:right-10 lg:left-auto lg:translate-x-0 lg:translate-y-0
           "
         >
           <Image
-            src="/images/Astro/astro-img2.png"
+            src="/images/characters/Space Character 6.png"
             alt="astronaut"
             width={250}
             height={250}

@@ -1,82 +1,125 @@
 "use client";
 
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default function SafeSection() {
+export default function HearFromKids() {
+
   const slides = [
-    {
-      img: "/images/parkatrack-img/slider-img4.png",
-    },
-    {
-      img: "/images/parkatrack-img/slider-img5.png",
-    },
-    {
-      img: "/images/parkatrack-img/slider-img4.png",
-    },
+    { img: "/images/parkatrack-img/slider-img4.png" },
+    { img: "/images/parkatrack-img/slider-img5.png" },
+    { img: "/images/parkatrack-img/slider-img4.png" },
+    { img: "/images/parkatrack-img/slider-img5.png" },
   ];
 
   return (
     <section
-      className="w-full py-16 bg-cover bg-center px-6"
-      style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
+      className="
+      relative                     /* IMPORTANT for absolute child */
+      w-full h-[1200px] pt-[15rem] text-center 
+      bg-[url('/images/bg-cloud-mobile.png')]
+      md:bg-[url('/images/bg-whykids.jpg')]
+      bg-cover bg-center bg-no-repeat
+      px-5 py-12 lg:pt-8 lg:h-full
+      "
     >
-      {/* Title */}
+
+      {/* 🔥 Astronaut — exact position like screenshot 1 */}
+      <div className=" w-[250px] transform rotate-[14deg]
+          absolute top-[-54px] left-1/2 -translate-x-1/2   /* mobile center over cloud */
+          md:top-6 md:left-10 md:-translate-x-0            /* desktop corner */
+        ">
+        <Image
+          src="/images/characters/Space Character 11.png"
+          width={250}
+          height={250}
+          alt="astronaut"
+          className="drop-shadow-xl select-none pointer-events-none"
+        />
+      </div>
+
+
+      {/* ---------- Title ---------- */}
       <div className="text-center px-4">
         <h2 className="text-white text-3xl font-bold tracking-wide">
           FUN IS SAFE AT
         </h2>
-
         <h3 className="text-orange-500 text-4xl font-extrabold -mt-1">
           Skyjumper Kids
         </h3>
-
         <div className="h-1 w-24 bg-white mx-auto mt-3 rounded-full" />
       </div>
 
-      {/* Paragraph */}
+      {/* ---------- Paragraph ---------- */}
       <p className="text-white text-center mt-6 text-sm leading-relaxed max-w-md mx-auto opacity-90">
-        At Skyjumper Kids, safety comes first. All equipment is thoroughly 
-        sanitized. Age-appropriate trampolines ensure that kids stay safe while 
-        having fun. All rules are followed under strict supervision to ensure 
-        a safe and enjoyable environment.
+        At Skyjumper Kids, safety comes first. All equipment is sanitized,
+        trampolines are safe & supervised so kids enjoy worry-free fun.
       </p>
 
-      {/* Button */}
+      {/* ---------- Button ---------- */}
       <div className="text-center mt-6">
         <button className="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold shadow-md hover:bg-orange-600 transition">
           Read More About Safety
         </button>
       </div>
 
-      {/* Carousel */}
-      <div className="mt-10 w-full flex justify-center">
-        <div className="w-[300px] bg-white/5 rounded-3xl p-2 shadow-xl border border-orange-400">
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 2500 }}
-            loop={true}
-            className="rounded-2xl"
-          >
-            {slides.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-full h-98 rounded-2xl overflow-hidden">
-                  <Image
-                    src={item.img}
-                    alt="slider image"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+
+      {/* ---------- Carousel ---------- */}
+      <div className="max-w-[1500px] mx-auto mt-16">
+        
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          autoplay={{ delay: 2000, disableOnInteraction:false }}
+          loop={true}
+          spaceBetween={30}
+          slidesPerView={1}
+
+          pagination={{ el: ".kids-pagination", clickable:true }}
+
+          breakpoints={{
+            640:{slidesPerView:1},
+            768:{slidesPerView:2},
+            1024:{slidesPerView:3},
+          }}
+
+          className="pb-14"
+        >
+          {slides.map((item,i)=>(
+            <SwiperSlide key={i}>
+              <div className="w-full h-[450px] lg:h-[650px] rounded-3xl overflow-hidden shadow-xl border border-orange-400 bg-white/5 p-3">
+                <img src={item.img} className="w-full h-full object-cover rounded-3xl"/>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* bullets visible below (fixed) */}
+        <div className="kids-pagination flex justify-center mt-6 z-50"></div>
       </div>
+
+      {/* ========== BOTTOM ASTRONAUT ========== */}
+      <div
+        className="
+          absolute left-1/2 bottom-[-30px]     /* pull astronaut UP like screenshot */
+          -translate-x-1/2                     /* center align exactly */
+          md:bottom-[-60px]
+          w-[220px] md:w-[230px]
+          rotate-[22deg]                       /* same 1st screenshot tilt */
+          z-20                                 /* ensure above bg */
+        "
+      >
+        <Image
+          src="/images/characters/Space Character 1.png"
+          alt="astronaut"
+          width={250}
+          height={250}
+          className=""
+        />
+      </div>
+
     </section>
   );
 }
