@@ -76,7 +76,7 @@ export default function BlogsSection() {
 
       {/* ========== BOTTOM ASTRONAUT (hide on /locations) ========== */}
         <div
-          className="w-[190px]
+          className="w-[190px]  lg:hidden
             absolute left-1/2 -translate-x-1/2 translate-y-10
             lg:bottom-10 lg:right-10 lg:left-auto lg:translate-x-0 lg:translate-y-0
           "

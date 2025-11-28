@@ -3,17 +3,25 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
+import { usePathname } from "next/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 
 export default function GallerySection() {
   const img = "/images/kidsbday.png";
 
+  const pathname = usePathname();
+  const isLocations = pathname === "/locations";
+
+
   return (
-    <section className="w-full py-20 mt-20 mb-20 px-5 bg-white">
+    <section className={
+    isLocations
+      ? "relative w-full px-5 py-20 h-[890px] pt-[6rem] lg:pt-8 lg:h-full py-12 text-center bg-[url('/images/bg-cloud-mobile-sm.png')] md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+      : "w-full py-20 lg:mt-8 lg:mb-8 mb-20 px-5 bg-white"
+  }>
       {/* Heading */}
-      <div className="text-center mb-6">
+      <div className="text-center mt-24 mb-6">
         <h2 className="text-black text-2xl font-extrabold tracking-wide">
           OUR
         </h2>

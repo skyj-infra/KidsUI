@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function FAQSection() {
   const faqData = [
@@ -28,7 +29,7 @@ export default function FAQSection() {
 
   return (
     <section
-      className="w-full py-12 px-6 bg-cover bg-center"
+      className="w-full py-12 mb-24 px-6 bg-cover bg-center"
     //   style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
     >
 
@@ -84,6 +85,16 @@ export default function FAQSection() {
         ))}
 
       </div>
+             {/* 🚀 Bottom Astronaut — changes based on location */}
+            <div className="w-[180px] absolute left-1/2 -translate-x-1/2 translate-y-10 lg:hidden">
+              <Image
+                src="/images/characters/Space Character 7.png"
+                alt="astronaut"
+                width={250}
+                height={250}
+                className="-mt-10"
+              />
+            </div>
 
     </section>
   );

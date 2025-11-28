@@ -3,12 +3,17 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { usePathname } from "next/navigation";
 
 // Import styles
 import "swiper/css";
 import "swiper/css/pagination";
 
 export default function WhySkyjumperKids() {
+
+  const pathname = usePathname();
+  const isLocations = pathname === "/locations";
+    
   const items = [
     {
       img: "/images/2kids-imgnew.png",
@@ -45,9 +50,13 @@ export default function WhySkyjumperKids() {
 
   return (
     <section
-      className="h-[1200px] pt-[18rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile.png')]        
-   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+      className={
+      isLocations
+        ? "w-full py-8 lg:mt-8 lg:mb-8 px-5 h-[950px] pt-[14rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile-sm.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+        : "h-[1200px] pt-[18rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile.png')]  /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+    }
     >
+      
       
       <div className="mt-8">
         {/* Heading */}
@@ -115,7 +124,7 @@ export default function WhySkyjumperKids() {
           ))}
         </Swiper>
         {/* 🚀 ASTRONAUT — Added Only for Mobile */}
-        <div className="absolute w-[350px] left-1/2 -translate-x-1/2 block md:hidden">
+        <div className={`${isLocations ? "hidden" : "block"} absolute w-[350px] left-1/2 -translate-x-1/2 block md:hidden`}>
           <Image
             src="/images/characters/Space Character 12.png"
             alt="Astronaut"

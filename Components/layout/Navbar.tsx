@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Menu, MapPin, ChevronDown, Cake, Home, Info } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -38,10 +39,10 @@ export default function Navbar() {
           <span>About us</span>
         </div>
 
-        <div className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
+        <Link  href="/locations"  className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
           <MapPin size={20} />
           <span>Locations</span>
-        </div>
+        </Link >
 
         <div className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
           <Home size={20} />

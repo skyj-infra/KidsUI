@@ -3,14 +3,14 @@
 import Image from "next/image";
 
 export default function SpotUsSection() {
+  
   return (
     <section
-      className="w-full px-5 py-14 text-white bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
+      className="relative w-full px-5 py-14 text-white h-[1200px] pt-[6rem] lg:pt-8 lg:h-full py-12 text-center bg-[url('/images/bg-cloud-mobile.png')] md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
 
       {/* ---------- CENTER CONTAINER (1500px DESKTOP) ---------- */}
-      <div className="max-w-[1500px] mx-auto">
+      <div className="max-w-[1500px] mx-auto mt-24 lg:mt-16 mb-16">
 
         {/* ---------- HEADING ---------- */}
        <div className="text-center">

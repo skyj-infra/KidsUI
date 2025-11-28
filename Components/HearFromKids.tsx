@@ -5,8 +5,14 @@ import { Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
+import { usePathname } from "next/navigation";
 
 export default function HearFromKids() {
+ 
+  const pathname = usePathname();
+  const isLocations = pathname === "/locations";
+
+
    const videos = [
     "https://skyjumperstoragemedia.b-cdn.net/videos/b982d88e-f149-48a3-a637-bcb324b8a878-Pune_tales_3.mp4?sv=2025-11-05&st=2025-11-07T17%3A50%3A06Z&se=2026-11-07T17%3A50%3A06Z&sr=b&sp=r&sig=9SEOFYM9ClpImksXzVlH20JZN9DALVPeElsAzyZrF%2FU%3D&rscd=inline&rsct=video%2Fmp4",
     "https://skyjumperstoragemedia.b-cdn.net/videos/c8ffe71f-81ce-46d7-9b1b-7dbf04c70a72-Ambernath%2001.mp4?sv=2025-11-05&st=2025-11-05T07%3A21%3A32Z&se=2026-11-05T07%3A21%3A32Z&sr=b&sp=r&sig=Tccfezs26jzLV8S6%2FUaSPWy1hVxUudoZQFFRkudyl2U%3D",
@@ -15,28 +21,36 @@ export default function HearFromKids() {
   ];
 
   return (
-    <section
-      className="w-full py-12 px-5 py-20 h-[1050px] pt-[12rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
-   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
-    >
+    <section className={
+      isLocations
+        ? "w-full py-8 lg:mt-8 lg:mb-8 mb-20 px-5 bg-white"
+        : "w-full px-5 py-20 h-[1050px] pt-[12rem] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+    }>
 
-            {/* 🔥 Astronaut — exact position like screenshot 1 */}
-            <div className=" w-[250px] mt-[-18rem] transform rotate-[90deg]  scale-x-[-1]
-                absolute left-1/2 -translate-x-1/2   /* mobile center over cloud */
-                md:top-6 md:left-10 md:-translate-x-0            /* desktop corner */
-              ">
-              <Image
-                src="/images/characters/Space Character 4.png"
-                width={250}
-                height={250}
-                alt="astronaut"
-                className="drop-shadow-xl select-none pointer-events-none"
-              />
-            </div>
+
+      {/* 🔥 Astronaut — exact position like screenshot 1 */}
+      <div className={`${isLocations ? "hidden" : "block"} w-[250px] mt-[-18rem]
+  transform rotate-[90deg] scale-x-[-1] absolute left-1/2 -translate-x-1/2 
+  md:top-6 md:left-10 md:-translate-x-0`}
+        >
+        <Image
+          src="/images/characters/Space Character 4.png"
+          width={250}
+          height={250}
+          alt="astronaut"
+          className="drop-shadow-xl select-none pointer-events-none"
+        />
+      </div>
 
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-white text-2xl font-bold">HEAR FROM</h2>
+        <h2
+          className={`text-2xl font-bold ${
+            isLocations ? "text-black" : "text-white"
+          }`}
+        >
+          {isLocations ? "HAPPY TALES OF" : "HEAR FROM"}
+        </h2>
         <h3 className="text-orange-500 text-4xl font-extrabold -mt-1">
           Skyjumper Kids
         </h3>
@@ -89,21 +103,19 @@ export default function HearFromKids() {
       <div className="kids-pagination mt-6 flex justify-center"></div>
       </div>
 
-      {/* ========== BOTTOM ASTRONAUT (hide on /locations) ========== */}
-              <div
-                className="w-[250px]
-                  absolute left-1/2 -translate-x-1/2 translate-y-10
-                  lg:bottom-10 lg:right-10 lg:left-auto lg:translate-x-0 lg:translate-y-0
-                "
-              >
-                <Image
-                  src="/images/characters/Space Character 7.png"
-                  alt="astronaut"
-                  width={250}
-                  height={250}
-                  className="mt-8"
-                />
-              </div>
+
+       {/* 🚀 Bottom Astronaut — changes based on location */}
+      <div className="w-[250px] absolute left-1/2 -translate-x-1/2 translate-y-10 lg:hidden">
+        <Image
+          src={isLocations 
+                ? "/images/characters/Space Character 13.png"  // 🔥 location page character
+                : "/images/characters/Space Character 7.png"}  // 🔥 default
+          alt="astronaut"
+          width={250}
+          height={250}
+          className="mt-8"
+        />
+      </div>
     </section>
   );
 }
