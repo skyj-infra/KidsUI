@@ -9,7 +9,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#0b0b14] lg:bg-transparent fixed top-0 left-0 z-[100] px-5 py-3 lg:px-14 lg:py-5 flex items-center justify-between">
+    <nav className="w-[94%] ml-[0.7rem] lg:ml-0 lg:w-full mx-auto mt-2 rounded-[20px] bg-[#0b0b14] lg:bg-transparent fixed top-0 left-0 z-[100] px-5 py-3 lg:px-14 lg:py-5 flex items-center justify-between">
 
       {/* BACKGROUND BAR (DESKTOP ONLY) */}
       <div className="
@@ -22,7 +22,7 @@ export default function Navbar() {
       </div>
 
       {/* Logo */}
-      <div className="relative w-28 h-10 lg:w-40 lg:h-12 z-[200]">
+      <div className="relative ml-[-2rem] w-28 h-10 lg:w-40 lg:h-12 z-[200]">
         <Image
           src="/images/Skyjumper-kids-Logo-V2.png"
           alt="Skyjumper Kids Logo"
@@ -77,15 +77,15 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="absolute top-16 left-0 w-full bg-[#0b0b14] text-white flex flex-col gap-4 px-6 py-4 lg:hidden shadow-lg">
+        <div className="absolute rounded-[20px] top-16 left-0 w-full bg-[#0b0b14] text-white flex flex-col gap-4 px-6 py-4 lg:hidden shadow-lg">
           <div className="flex items-center gap-2 border-b border-gray-700 pb-3">
             <Info size={20} />
             <span className="text-lg">About us</span>
           </div>
-          <div className="flex items-center gap-2 border-b border-gray-700 pb-3">
+          <Link href="/locations" className="flex items-center gap-2 border-b border-gray-700 pb-3">
             <MapPin size={20} />
             <span className="text-lg">Locations</span>
-          </div>
+          </Link>
           <div className="flex items-center gap-2 border-b border-gray-700 pb-3">
             <Home size={20} />
             <span className="text-lg">School Trip</span>
