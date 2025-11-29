@@ -29,10 +29,10 @@ export default function ParentsZone() {
           <div className="flex flex-col gap-4">
 
             {/* CARD 1 */}
-            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[300px] flex flex-col justify-between">
+            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[236px] flex flex-col justify-between">
               <div className="p-4">
                 <h4 className="text-xl font-bold leading-tight">THE PLAY BUDDY</h4>
-                <p className="text-sm mt-1 opacity-90 leading-tight">
+                <p className="text-[11px] mt-1 opacity-90 leading-tight">
                   JUMP IN AND ROLL WITH THE LITTLE ONES.
                 </p>
               </div>
@@ -48,10 +48,10 @@ export default function ParentsZone() {
             </div>
 
             {/* CARD 2 */}
-            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[300px] flex flex-col justify-between">
+            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[236px] flex flex-col justify-between">
               <div className="p-4">
                 <h4 className="text-xl font-bold leading-tight">THE FREE BIRD</h4>
-                <p className="text-sm mt-1 opacity-90 leading-tight">
+                <p className="text-[11px] mt-1 opacity-90 leading-tight">
                   DROP THEM, STEP OUT, ENJOY THE MALL. WE’VE GOT THE KIDS COVERED.
                 </p>
               </div>
@@ -70,10 +70,10 @@ export default function ParentsZone() {
 
           {/* RIGHT COLUMN → 1 CENTER CARD */}
           <div className="flex items-center">
-            <div className="bg-white rounded-3xl shadow-lg border border-gray-200 h-[380px] w-full flex flex-col justify-between">
+            <div className="bg-white rounded-3xl shadow-lg border border-gray-200 h-[236px] w-full flex flex-col justify-between">
               <div className="p-4">
                 <h4 className="text-xl font-bold text-black leading-tight">THE CHILL MODE</h4>
-                <p className="text-sm mt-1 text-gray-700 leading-tight">
+                <p className="text-[11px] mt-1 text-gray-700 leading-tight">
                   SIT BACK IN OUR CAFÉ — COFFEE, WORK, GOSSIP… YOUR CHOICE.
                 </p>
               </div>

@@ -22,7 +22,7 @@ export default function BlogsSection() {
 
   return (
     <section
-      className="w-full py-12 py-20 px-5 h-[1050px] pt-[10rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+      className="w-full py-12 py-20 px-5 h-[1100px] pt-[8rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
    /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
       {/* Heading */}
@@ -36,11 +36,11 @@ export default function BlogsSection() {
 
       {/* Blog Cards (Responsive Grid) */}
       <div
-        className="max-w-[1500px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+        className="max-w-[1500px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
         {blogs.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl p-3 shadow-xl flex gap-3"
+            className="bg-white rounded-3xl p-4 shadow-xl flex gap-3"
           >
             {/* Blog Image */}
             <div className="relative w-24 h-24 lg:w-54 lg:h-54 rounded-2xl overflow-hidden shrink-0">
@@ -53,24 +53,37 @@ export default function BlogsSection() {
             </div>
 
             {/* Blog Content */}
-            <div className="flex flex-col justify-center">
+            <div className="text-left flex flex-col justify-center">
               <div>
                 <h4 className="text-black text-lg font-bold">{item.title}</h4>
                 <p className="text-gray-700 text-sm mt-1">{item.desc}</p>
               </div>
 
-              <button className="bg-orange-500 text-white text-sm px-4 py-1 rounded-full mt-3 w-fit flex items-center gap-1">
-                READ MORE →
+              <button className="mb-[-1.5rem] bg-orange-500 text-white text-sm px-2 py-1 rounded-full mt-3 w-fit flex items-center gap-1">
+                READ MORE
+                 <span className="w-5 h-5 flex items-center justify-center 
+                 border-2 border-white rounded-full text-[10px] font-bold leading-none">
+                  →
+                </span> 
               </button>
+              
             </div>
           </div>
         ))}
       </div>
 
       {/* View All Button */}
-      <div className="text-center mt-7">
-        <button className="bg-orange-500 text-white px-8 py-2 rounded-full font-semibold shadow-lg">
-          VIEW ALL →
+      <div className="text-center mt-16">
+        <button className="bg-orange-500 text-white px-8 py-2 rounded-full font-semibold shadow-lg
+          flex items-center gap-2 justify-center w-fit mx-auto">
+
+          VIEW ALL
+
+          <span className="w-5 h-5 flex items-center justify-center 
+            border-2 border-white rounded-full text-[10px] font-bold leading-none">
+            →
+          </span>
+
         </button>
       </div>
 

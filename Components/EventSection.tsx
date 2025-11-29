@@ -58,15 +58,26 @@ export default function OtherEvents() {
         {/* CARD 1 */}
         <div
           className="
-            rounded-3xl bg-white/10 border border-purple-400 backdrop-blur-md shadow-xl 
-            p-4 flex items-center gap-4
-
-            lg:p-8 lg:gap-8 lg:h-[260px] lg:backdrop-blur-xl
+            rounded-3xl 
+            bg-[#39226b]/90 
+            border-2 border-white/80 
+            backdrop-blur-xl 
+            shadow-[0_10px_30px_rgba(0,0,0,0.6)] 
+            relative overflow-hidden
+            p-2 flex items-center gap-4
+            lg:p-8 lg:gap-8 lg:h-[260px]
           "
         >
+
+          {/* Outer glow ring */}
+          <div className="absolute inset-0 rounded-3xl pointer-events-none
+            shadow-[inset_0_0_25px_10px_rgba(255,255,255,0.15)]" ></div>
+
           <div className="flex-1">
-            <h4 className="text-white text-xl lg:text-3xl font-bold">PLAY DATE</h4>
-            <p className="text-white/70 text-sm lg:text-lg mt-2">
+            <h4 className="text-white text-xl lg:text-3xl font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              PLAY DATE
+            </h4>
+            <p className="text-white/80 text-sm lg:text-lg mt-2 leading-tight drop-shadow-md">
               A safe environment where kids socialize, play and have fun.
             </p>
           </div>
@@ -76,22 +87,38 @@ export default function OtherEvents() {
             alt="kids"
             width={170}
             height={200}
-            className="rounded-xl -mb-4 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[230px] lg:h-[260px]"
+            className="
+              rounded-xl 
+              -mb-4 lg:mb-1 -mr-4 lg:-mr-8 
+              lg:w-[230px] lg:h-[260px]
+              drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]
+            "
           />
         </div>
+
 
         {/* CARD 2 */}
         <div
           className="
-            rounded-3xl bg-white/10 border border-purple-400 backdrop-blur-md shadow-xl 
-            p-4 flex items-center gap-4
-
-            lg:p-8 lg:gap-8 lg:h-[260px] lg:backdrop-blur-xl
+            rounded-3xl 
+            bg-[#39226b]/90 
+            border-2 border-white/80 
+            backdrop-blur-xl 
+            shadow-[0_10px_30px_rgba(0,0,0,0.6)] 
+            relative overflow-hidden
+            p-2 flex items-center gap-4
+            lg:p-8 lg:gap-8 lg:h-[260px]
           "
         >
+
+          <div className="absolute inset-0 rounded-3xl pointer-events-none
+            shadow-[inset_0_0_8px_8px_rgba(255,255,255,0.15)]" ></div>
+
           <div className="flex-1">
-            <h4 className="text-white text-xl lg:text-3xl font-bold">SCHOOL TRIP</h4>
-            <p className="text-white/70 text-sm lg:text-lg mt-2">
+            <h4 className="text-white text-xl lg:text-3xl font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              SCHOOL TRIP
+            </h4>
+            <p className="text-white/80 text-sm lg:text-lg mt-2 drop-shadow-md">
               An exciting learning experience your child will never forget.
             </p>
           </div>
@@ -101,11 +128,17 @@ export default function OtherEvents() {
             alt="kids"
             width={170}
             height={200}
-            className="rounded-xl -mb-4 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[230px] lg:h-[260px]"
+            className="
+              rounded-xl 
+              -mb-4 lg:mb-1 -mr-4 lg:-mr-8 
+              lg:w-[230px] lg:h-[260px]
+              drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]
+            "
           />
         </div>
 
       </div>
+
 
       {/* ========== BOTTOM ASTRONAUT (hide on /locations) ========== */}
       {!isLocations && (
