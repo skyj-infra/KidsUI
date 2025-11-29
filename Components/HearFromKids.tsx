@@ -105,7 +105,7 @@ export default function HearFromKids() {
 
 
        {/* 🚀 Bottom Astronaut — changes based on location */}
-      <div className="w-[250px] absolute left-1/2 -translate-x-1/2 translate-y-10 lg:hidden">
+      <div className="w-[250px] absolute left-1/2 z-10 -translate-x-1/2 translate-y-10 lg:hidden">
         <Image
           src={isLocations 
                 ? "/images/characters/Space Character 13.png"  // 🔥 location page character

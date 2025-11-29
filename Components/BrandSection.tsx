@@ -6,7 +6,9 @@ export default function OtherBrands() {
   const logo = "/images/skyjup-logo.png";
 
   return (
-    <section className="w-full py-12 mt-8 lg:mt-0 px-5 bg-white">
+    <section className="w-full py-12 mt-8 lg:mt-0 max-w-[1500px] mx-auto lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 text-center md:text-left
+    relative  h-[750px] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/cloud-down-bg-long.png')]        
+   /* desktop default */  bg-cover bg-center bg-no-repeat">
 
       {/* Heading */}
       <div className="text-center pt-10 lg:pt-0 mb-6">
@@ -20,9 +22,9 @@ export default function OtherBrands() {
       </div>
 
       {/* LOGO GRID */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1500px] mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1500px] mx-auto">
         {/* Box 1 */}
-        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center">
+        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           <div className="relative w-28 h-28">
             <Image
               src={logo}
@@ -34,7 +36,7 @@ export default function OtherBrands() {
         </div>
 
         {/* Box 2 */}
-        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center">
+        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           <div className="relative w-28 h-28">
             <Image
               src={logo}
@@ -46,7 +48,7 @@ export default function OtherBrands() {
         </div>
 
         {/* Box 3 */}
-        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center">
+        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           <div className="relative w-28 h-28">
             <Image
               src={logo}
@@ -58,7 +60,7 @@ export default function OtherBrands() {
         </div>
 
         {/* Box 4 */}
-        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center">
+        <div className="bg-white rounded-3xl shadow-md p-4 flex items-center justify-center drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
           <div className="relative w-28 h-28">
             <Image
               src={logo}
@@ -69,6 +71,18 @@ export default function OtherBrands() {
           </div>
         </div>
       </div>
+
+    {/* 🚀 Bottom Astronaut — changes based on location */}
+    <div className="w-[210px] mt-[-1rem] absolute right-0 z-10 translate-y-10 lg:hidden">
+      <Image
+        src={"/images/characters/Space Character 13.png"}
+        alt="astronaut"
+        width={200}
+        height={200}
+        className=""
+      />
+    </div>
+
     </section>
   );
 }
