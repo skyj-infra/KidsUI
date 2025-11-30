@@ -125,7 +125,8 @@ p {
 
 @media (min-width: 64rem) {
     .lg\:w-full {
-        width: 98% !important;
+        width: 99% !important;
+       margin-left: 0.5rem !important;
     }
 }
 
