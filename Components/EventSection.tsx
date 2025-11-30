@@ -147,7 +147,7 @@ export default function OtherEvents() {
         <div
           className="w-[250px]
             absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-10
-            lg:bottom-10 lg:right-10 lg:left-auto lg:translate-x-0 lg:translate-y-0
+            lg:bottom-2 lg:right-2 lg:left-auto lg:translate-x-0 lg:translate-y-0
           "
         >
           <Image

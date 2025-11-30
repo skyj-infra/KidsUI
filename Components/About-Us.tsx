@@ -24,7 +24,7 @@ export default function AboutKidsSection() {
 
           <div className="w-20 h-[3px] bg-black mx-auto md:mx-0 mt-2 mb-6"></div>
 
-          <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed px-8">
+          <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed px-8 lg:px-0">
             SkyJumper Kids is a dedicated indoor play and party destination 
             designed specially for children aged from 3 to 13. More than just a 
             playground, it is a vibrant center where imagination, physical 
