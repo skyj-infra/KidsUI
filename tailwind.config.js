@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}", 
-    "./Components/**/*.{js,ts,jsx,tsx,mdx}", // you have capital folder, so keep both
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./Components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#f86624",   // 🔥 NOW text-primary works
+        primary: "#f86624",
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        tungsten: ["var(--font-tungsten)"],
-        superjoyful: ["var(--font-superjoyful)"],
+        poppins: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        tungsten: ["var(--font-tungsten)", "sans-serif"],
+        superjoyful: ["var(--font-superjoyful)", "cursive"],
       },
     },
   },
-  plugins: [],
 };

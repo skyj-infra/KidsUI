@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
-
 @import "swiper/css";
 @import "swiper/css/pagination";
 
+@theme {
+  --color-primary: #f86624;
+  --font-poppins: var(--font-poppins);
+  --font-tungsten: var(--font-tungsten);
+  --font-superjoyful: var(--font-superjoyful);
+}
 
 :root {
   --background: #ffffff;
@@ -23,20 +28,44 @@ body {
   font-family: var(--font-poppins);
 }
 
+/* Use the variables created by next/font */
 h1,
-h2,
+h2 {
+  font-family: var(--font-superjoyful);
+  line-height: 1.2;
+}
+
 h3,
-h4,
-h5,
-h6 {
+h4 {
   font-family: var(--font-poppins);
   line-height: 1.2;
 }
 
+h5,
+h6 {
+  font-family: var(--font-tungsten);
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
 p {
   font-family: var(--font-poppins);
-  line-height: 1.2;
+  line-height: 1.5;
 }
+
+
+/* Regular */
+/* @font-face {
+  font-family: "Superjoyful";
+  src: url("../public/fonts/superjoyful/SuperJoyful.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Tungsten";
+  src: url("../public/fonts/tungsten/Tungsten-Semibold.otf") format("opentype");
+} */
+
 
 .kids-pagination .swiper-pagination-bullet {
   background: #fff !important;

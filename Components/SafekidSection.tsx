@@ -44,23 +44,23 @@ export default function HearFromKids() {
 
       {/* ---------- Title ---------- */}
       <div className="text-center px-4">
-        <h2 className="text-white text-3xl font-bold tracking-wide">
+        <h1 className="text-white text-3xl font-bold tracking-wide">
           FUN IS SAFE AT
-        </h2>
-        <h3 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        </h1>
+        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
           Skyjumper Kids
-        </h3>
+        </h2>
         <div className="h-1 w-24 bg-white mx-auto mt-3 rounded-full" />
       </div>
 
       {/* ---------- Paragraph ---------- */}
-      <p className="text-white text-center mt-6 text-sm leading-relaxed max-w-md mx-auto opacity-90">
+      <p className="text-white text-center mt-6 px-8 text-sm leading-relaxed max-w-md mx-auto opacity-90">
         At Skyjumper Kids, safety comes first. All equipment is sanitized,
         trampolines are safe & supervised so kids enjoy worry-free fun.
       </p>
 
       {/* ---------- Button ---------- */}
-      <div className="text-center mt-6">
+      <div className="text-center mt-10">
         <button className="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold shadow-md hover:bg-orange-600 transition">
           Read More About Safety
         </button>

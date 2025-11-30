@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function AboutKidsSection() {
   return (
     <section className="w-full max-w-[1500px] mx-auto lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 text-center md:text-left
-    relative  py-20 h-[710px] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/cloud-upper-bg-long.png')]        
+    relative h-[710px] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/cloud-upper-bg-long.png')]        
    /* desktop default */  bg-cover bg-center bg-no-repeat"
       >
       
@@ -14,17 +14,17 @@ export default function AboutKidsSection() {
         
         {/* Left Section (Text) */}
         <div className="md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-wide text-black">
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-wide text-black">
             ABOUT
-          </h2>
+          </h1>
 
-          <h3 className="text-[32px] md:text-[40px] font-extrabold text-[#ff6a34] -mt-1">
+          <h2 className="text-[32px] md:text-[40px] font-extrabold text-[#ff6a34] -mt-1">
             Skyjumper Kids
-          </h3>
+          </h2>
 
           <div className="w-20 h-[3px] bg-black mx-auto md:mx-0 mt-2 mb-6"></div>
 
-          <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed">
+          <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed px-8">
             SkyJumper Kids is a dedicated indoor play and party destination 
             designed specially for children aged from 3 to 13. More than just a 
             playground, it is a vibrant center where imagination, physical 

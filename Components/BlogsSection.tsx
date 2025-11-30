@@ -27,10 +27,10 @@ export default function BlogsSection() {
     >
       {/* Heading */}
       <div className="text-center lg:mt-16 mb-6">
-        <h2 className="text-white text-2xl font-bold">OUR</h2>
-        <h3 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h1 className="text-white text-2xl font-bold">OUR</h1>
+        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
           Blogs
-        </h3>
+        </h2>
         <div className="h-1 w-20 bg-white mx-auto mt-2 rounded-full" />
       </div>
 
@@ -55,11 +55,11 @@ export default function BlogsSection() {
             {/* Blog Content */}
             <div className="text-left flex flex-col justify-center">
               <div>
-                <h4 className="text-black text-lg font-bold">{item.title}</h4>
+                <h5 className="text-black text-[25px] lg:text-[40px] font-bold">{item.title}</h5>
                 <p className="text-gray-700 text-sm mt-1">{item.desc}</p>
               </div>
 
-              <button className="mb-[-1.5rem] bg-orange-500 text-white text-sm px-2 py-1 rounded-full mt-3 w-fit flex items-center gap-1">
+              <button className="mb-[-1.5rem] font-tungsten tracking-widest bg-orange-500 text-white text-sm px-2 py-1 rounded-full mt-3 w-fit flex items-center gap-1">
                 READ MORE
                  <span className="w-5 h-5 flex items-center justify-center 
                  border-2 border-white rounded-full text-[10px] font-bold leading-none">
@@ -74,7 +74,7 @@ export default function BlogsSection() {
 
       {/* View All Button */}
       <div className="text-center mt-16">
-        <button className="bg-orange-500 text-white px-8 py-2 rounded-full font-semibold shadow-lg
+        <button className="font-tungsten tracking-widest bg-primary text-[18px] text-white px-6 py-2 rounded-full font-semibold shadow-lg
           flex items-center gap-2 justify-center w-fit mx-auto">
 
           VIEW ALL

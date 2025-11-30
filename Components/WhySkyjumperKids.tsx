@@ -66,10 +66,10 @@ export default function WhySkyjumperKids() {
       
       <div className="mt-8">
         {/* Heading */}
-        <h2 className="text-white text-4xl font-extrabold">WHY</h2>
-        <h3 className="text-[#ff6a34] text-4xl font-extrabold -mt-2">
+        <h1 className="text-white text-4xl font-extrabold">WHY</h1>
+        <h2 className="text-[#ff6a34] text-4xl font-extrabold -mt-2">
           Skyjumper Kids
-        </h3>
+        </h2>
         <div className="w-24 h-[3px] bg-white mx-auto mt-2"></div>
       </div>
 
@@ -123,11 +123,11 @@ export default function WhySkyjumperKids() {
                       {item.title}
                     </h4>
 
-                    <p className="text-[#ff6a34] text-sm font-bold mt-1">
+                    <p className="text-white text-sm font-bold mt-1">
                       {item.age}
                     </p>
 
-                    <p className="text-gray-300 text-sm mt-2">{item.desc}</p>
+                    <p className="text-gray-200 text-sm mt-2">{item.desc}</p>
                   </div>
                 </div>
 
@@ -205,7 +205,7 @@ export default function WhySkyjumperKids() {
                         {item.title}
                       </h4>
 
-                      <p className="text-[#ff6a34] text-sm font-bold mt-1">
+                      <p className="text-white text-sm font-bold mt-1">
                         {item.age}
                       </p>
 

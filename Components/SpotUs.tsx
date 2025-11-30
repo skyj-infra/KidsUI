@@ -15,12 +15,12 @@ export default function SpotUsSection() {
         {/* ---------- HEADING ---------- */}
        <div className="text-center">
             {/* MOBILE VIEW – Separate lines */}
-            <h2 className="text-white text-3xl font-extrabold block lg:hidden">
+            <h1 className="text-white text-3xl font-extrabold block lg:hidden">
                 SPOT
-            </h2>
-            <h3 className="text-orange-500 text-4xl font-extrabold -mt-1 block lg:hidden">
+            </h1>
+            <h2 className="text-orange-500 text-4xl font-extrabold -mt-1 block lg:hidden">
                 Us
-            </h3>
+            </h2>
 
             {/* DESKTOP VIEW – One Line */}
             <h2 className="hidden lg:inline-block text-white text-4xl font-extrabold">

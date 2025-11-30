@@ -11,12 +11,12 @@ export default function ParentsZone() {
 
       {/* HEADING */}
       <div className="text-center mb-10 ">
-        <h2 className="text-black text-3xl font-extrabold tracking-wide">
+        <h1 className="text-black text-3xl font-extrabold tracking-wide">
           PARENTS
-        </h2>
-        <h3 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        </h1>
+        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
           Zone
-        </h3>
+        </h2>
         <div className="h-1 w-20 bg-black mx-auto mt-2 rounded-full" />
       </div>
 
@@ -29,12 +29,12 @@ export default function ParentsZone() {
           <div className="flex flex-col gap-4">
 
             {/* CARD 1 */}
-            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[236px] flex flex-col justify-between">
+            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[220px] flex flex-col justify-between">
               <div className="p-4">
-                <h4 className="text-xl font-bold leading-tight">THE PLAY BUDDY</h4>
-                <p className="text-[11px] mt-1 opacity-90 leading-tight">
+                <h5 className="text-[22px] lg:text-[50px] font-bold leading-tight">THE PLAY BUDDY</h5>
+                <h6 className="text-[11px] mt-1 opacity-90 leading-tight">
                   JUMP IN AND ROLL WITH THE LITTLE ONES.
-                </p>
+                </h6>
               </div>
 
               <div className="relative w-full h-[190px] rounded-3xl overflow-hidden">
@@ -48,12 +48,12 @@ export default function ParentsZone() {
             </div>
 
             {/* CARD 2 */}
-            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[236px] flex flex-col justify-between">
+            <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[220px] flex flex-col justify-between">
               <div className="p-4">
-                <h4 className="text-xl font-bold leading-tight">THE FREE BIRD</h4>
-                <p className="text-[11px] mt-1 opacity-90 leading-tight">
+                <h5 className="text-[22px] lg:text-[50px] font-bold leading-tight">THE FREE BIRD</h5>
+                <h6 className="text-[11px] mt-1 opacity-90 leading-tight">
                   DROP THEM, STEP OUT, ENJOY THE MALL. WE’VE GOT THE KIDS COVERED.
-                </p>
+                </h6>
               </div>
 
               <div className="relative w-full h-[190px] rounded-3xl overflow-hidden">
@@ -70,12 +70,12 @@ export default function ParentsZone() {
 
           {/* RIGHT COLUMN → 1 CENTER CARD */}
           <div className="flex items-center">
-            <div className="bg-white rounded-3xl shadow-lg border border-gray-200 h-[236px] w-full flex flex-col justify-between">
+            <div className="bg-white rounded-3xl shadow-lg border border-gray-200 h-[220px] w-full flex flex-col justify-between">
               <div className="p-4">
-                <h4 className="text-xl font-bold text-black leading-tight">THE CHILL MODE</h4>
-                <p className="text-[11px] mt-1 text-gray-700 leading-tight">
+                <h5 className="text-[22px] lg:text-[50px] font-bold text-black leading-tight">THE CHILL MODE</h5>
+                <h6 className="text-[11px] mt-1 text-gray-700 leading-tight">
                   SIT BACK IN OUR CAFÉ — COFFEE, WORK, GOSSIP… YOUR CHOICE.
-                </p>
+                </h6>
               </div>
 
               <div className="relative w-full h-[190px] rounded-3xl overflow-hidden">
@@ -98,10 +98,10 @@ export default function ParentsZone() {
         {/* CARD 1 */}
         <div className="bg-orange-500 rounded-3xl p-5 shadow-lg text-white h-[430px] flex flex-col justify-between">
           <div>
-            <h4 className="text-xl font-bold leading-tight">THE PLAY BUDDY</h4>
-            <p className="text-sm mt-1 opacity-90 leading-tight">
+            <h5 className="text-[22px] lg:text-[50px] font-bold leading-tight">THE PLAY BUDDY</h5>
+            <h6 className="text-sm mt-1 opacity-90 leading-tight">
               JUMP IN AND ROLL WITH THE LITTLE ONES.
-            </p>
+            </h6>
           </div>
           <div className="relative w-full mb-[-1.2rem] ml-[1.3rem] h-[290px] rounded-3xl overflow-hidden">
             <Image src={kidsImage} alt="Kids" fill className="object-cover object-bottom" />
@@ -111,10 +111,10 @@ export default function ParentsZone() {
         {/* CARD 2 */}
         <div className="bg-white rounded-3xl p-5 shadow-lg border border-gray-200 h-[430px] flex flex-col justify-between">
           <div>
-            <h4 className="text-xl font-bold text-black leading-tight">THE CHILL MODE</h4>
-            <p className="text-sm mt-1 text-gray-700 leading-tight">
+            <h5 className="text-[22px] lg:text-[50px] font-bold text-black leading-tight">THE CHILL MODE</h5>
+            <h6 className="text-sm mt-1 text-gray-700 leading-tight">
               SIT BACK IN OUR CAFÉ — COFFEE, WORK, GOSSIP… YOUR CHOICE.
-            </p>
+            </h6>
           </div>
           <div className="relative w-full mb-[-1.2rem] ml-[1.3rem] h-[290px] rounded-3xl overflow-hidden">
             <Image src={kidsImage} alt="Kids" fill className="object-cover object-bottom" />
@@ -124,10 +124,10 @@ export default function ParentsZone() {
         {/* CARD 3 */}
         <div className="bg-orange-500 rounded-3xl p-5 shadow-lg text-white h-[430px] flex flex-col justify-between">
           <div>
-            <h4 className="text-xl font-bold leading-tight">THE FREE BIRD</h4>
-            <p className="text-sm mt-1 opacity-90 leading-tight">
+            <h5 className="text-[22px] lg:text-[50px] font-bold leading-tight">THE FREE BIRD</h5>
+            <h6 className="text-sm mt-1 opacity-90 leading-tight">
               DROP THEM, STEP OUT, ENJOY THE MALL. WE’VE GOT THE KIDS COVERED.
-            </p>
+            </h6>
           </div>
           <div className="relative w-full mb-[-1.2rem] ml-[1.3rem] h-[290px] rounded-3xl overflow-hidden">
             <Image src={kidsImage} alt="Kids" fill className="object-cover object-bottom" />

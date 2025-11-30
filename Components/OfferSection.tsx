@@ -21,13 +21,13 @@ export default function KidsOffers() {
         <div className="lg:w-1/2">
 
           {/* Heading */}
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-black tracking-wide">
+          <h1 className="text-3xl lg:text-5xl font-extrabold text-black tracking-wide">
             SKUJUMPER KIDS
-          </h2>
+          </h1>
 
-          <h3 className="text-orange-500 text-4xl lg:text-5xl font-extrabold mt-1 leading-tight">
+          <h2 className="text-orange-500 text-4xl lg:text-5xl font-extrabold mt-1 leading-tight">
             Dropping Offers!
-          </h3>
+          </h2>
 
           {/* Underline */}
           <div className="w-20 lg:w-28 h-[4px] bg-[#1c1c2b] mx-auto lg:mx-0 mt-3 rounded-full"></div>

@@ -37,12 +37,12 @@ export default function OtherEvents() {
 
       {/* ========= HEADING ========= */}
       <div className="text-center mt-24">
-        <h2 className="text-white text-4xl lg:text-6xl font-extrabold tracking-widest">
+        <h1 className="text-white text-4xl lg:text-6xl font-extrabold tracking-widest">
           OTHER
-        </h2>
-        <h3 className="text-orange-500 text-5xl lg:text-7xl font-extrabold -mt-2">
+        </h1>
+        <h2 className="text-orange-500 text-5xl lg:text-7xl font-extrabold -mt-2">
           Events
-        </h3>
+        </h2>
         <div className="w-24 lg:w-32 h-1 bg-white mx-auto mt-3"></div>
       </div>
 
@@ -66,7 +66,7 @@ export default function OtherEvents() {
             backdrop-blur-xl 
             shadow-[0_10px_30px_rgba(0,0,0,0.6)] 
             relative overflow-hidden
-            p-2 flex items-center gap-4
+            p-3 flex items-center gap-4
             lg:p-8 lg:gap-8 lg:h-[260px]
           "
         >
@@ -75,10 +75,10 @@ export default function OtherEvents() {
           <div className="absolute inset-0 rounded-3xl pointer-events-none
             shadow-[inset_0_0_25px_10px_rgba(255,255,255,0.15)]" ></div>
 
-          <div className="flex-1">
-            <h4 className="text-white text-xl lg:text-3xl font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <div className="flex-1 text-left">
+            <h5 className="text-white text-[32px] lg:text-3xl font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               PLAY DATE
-            </h4>
+            </h5>
             <p className="text-white/80 text-sm lg:text-lg mt-2 leading-tight drop-shadow-md">
               A safe environment where kids socialize, play and have fun.
             </p>
@@ -108,7 +108,7 @@ export default function OtherEvents() {
             backdrop-blur-xl 
             shadow-[0_10px_30px_rgba(0,0,0,0.6)] 
             relative overflow-hidden
-            p-2 flex items-center gap-4
+            p-3 flex items-center gap-4
             lg:p-8 lg:gap-8 lg:h-[260px]
           "
         >
@@ -116,10 +116,10 @@ export default function OtherEvents() {
           <div className="absolute inset-0 rounded-3xl pointer-events-none
             shadow-[inset_0_0_8px_8px_rgba(255,255,255,0.15)]" ></div>
 
-          <div className="flex-1">
-            <h4 className="text-white text-xl lg:text-3xl font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <div className="flex-1 text-left">
+            <h5 className="text-white text-[32px] lg:text-3xl font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               SCHOOL TRIP
-            </h4>
+            </h5>
             <p className="text-white/80 text-sm lg:text-lg mt-2 drop-shadow-md">
               An exciting learning experience your child will never forget.
             </p>

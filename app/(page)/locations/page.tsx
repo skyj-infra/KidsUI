@@ -1,14 +1,14 @@
-import HeroSection from '@/Components/HeroSection'
-import TicketPrices from '@/Components/TicketPrices'
+import HeroSection from '@/components/HeroSection'
+import TicketPrices from '@/components/TicketPrices'
 import React from 'react'
-import EventSection from "@/Components/EventSection";
-import KidsOffers from '@/Components/OfferSection';
-import GallerySection from '@/Components/GallerySection';
-import ParkTour from '@/Components/ParkTour';
-import SpotUsSection from '@/Components/SpotUs';
-import FAQSection from '@/Components/Faq';
-import HearFromKids from '@/Components/HearFromKids';
-import WhySkyjumperKids from '@/Components/WhySkyjumperKids';
+import EventSection from "@/components/EventSection";
+import KidsOffers from '@/components/OfferSection';
+import GallerySection from '@/components/GallerySection';
+import ParkTour from '@/components/ParkTour';
+import SpotUsSection from '@/components/SpotUs';
+import FAQSection from '@/components/Faq';
+import HearFromKids from '@/components/HearFromKids';
+import WhySkyjumperKids from '@/components/WhySkyjumperKids';
 
 
 export default function Locations() {

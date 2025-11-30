@@ -1,16 +1,16 @@
 import React from 'react'
-import HeroSection from "@/Components/HeroSection";
-import AboutUs from "@/Components/About-Us";
-import WhySkyjumperKids from "@/Components/WhySkyjumperKids";
-import KidsBirthdaySection from "@/Components/KidsBirthdaySection";
-import EventSection from "@/Components/EventSection";
-import ParkAttractions from "@/Components/ParkAttractions";
-import SafeSection from "@/Components/SafekidSection";
-import ParentsZone from "@/Components/ParentsZone";
-import BlogsSection from "@/Components/BlogsSection";
-import GallerySection from "@/Components/GallerySection";
-import HearFromKids from "@/Components/HearFromKids";
-import BrandSection from "@/Components/BrandSection";
+import HeroSection from "@/components/HeroSection";
+import AboutUs from "@/components/About-Us";
+import WhySkyjumperKids from "@/components/WhySkyjumperKids";
+import KidsBirthdaySection from "@/components/KidsBirthdaySection";
+import EventSection from "@/components/EventSection";
+import ParkAttractions from "@/components/ParkAttractions";
+import SafeSection from "@/components/SafekidSection";
+import ParentsZone from "@/components/ParentsZone";
+import BlogsSection from "@/components/BlogsSection";
+import GallerySection from "@/components/GallerySection";
+import HearFromKids from "@/components/HearFromKids";
+import BrandSection from "@/components/BrandSection";
 
 export default function HomePage() {
   return (
