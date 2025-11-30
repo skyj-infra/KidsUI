@@ -37,12 +37,12 @@ export default function GallerySection() {
     <section
       className={
         isLocations
-          ? "relative w-full px-5 py-20 h-[890px] pt-[6rem] lg:pt-8 lg:h-full py-12 text-center bg-[url('/images/bg-cloud-mobile-sm.png')] md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
-          : "w-full py-14 lg:py-4 lg:mt-8 mb-20 px-5 bg-white"
+          ? "relative w-full px-5 py-20 h-[890px] pt-[6rem] lg:pt-8 lg:h-full text-center bg-[url('/images/bg-cloud-mobile-sm.png')] md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+          : "w-full py-6 lg:py-0 lg:mt-0 mb-20 px-5 bg-white"
       }
     >
       {/* Heading */}
-      <div className="text-center mt-24 mb-6">
+      <div className="text-center mt-20 lg:mt-16 mb-6">
         <h2 className="text-black text-2xl font-extrabold tracking-wide">
           OUR
         </h2>

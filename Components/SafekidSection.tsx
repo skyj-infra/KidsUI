@@ -19,7 +19,7 @@ export default function HearFromKids() {
     <section
       className="
       relative                     /* IMPORTANT for absolute child */
-      w-full h-[1200px] pt-[15rem] text-center 
+      w-full h-[1300px] pt-[15rem] text-center 
       bg-[url('/images/bg-cloud-mobile.png')]
       md:bg-[url('/images/bg-whykids.jpg')]
       bg-cover bg-center bg-no-repeat
@@ -77,7 +77,8 @@ export default function HearFromKids() {
           spaceBetween={30}
           slidesPerView={1}
 
-          pagination={{ el: ".kids-pagination", clickable:true }}
+          pagination={{ clickable: true, dynamicBullets:false }}
+
 
           breakpoints={{
             640:{slidesPerView:1},
@@ -97,18 +98,18 @@ export default function HearFromKids() {
         </Swiper>
 
         {/* bullets visible below (fixed) */}
-        <div className="kids-pagination flex justify-center mt-6 z-50"></div>
+        {/* <div className="kids-pagination flex justify-center mt-6 z-50"></div> */}
       </div>
 
       {/* ========== BOTTOM ASTRONAUT ========== */}
       <div
         className="
-          absolute left-1/2 bottom-[-30px]     /* pull astronaut UP like screenshot */
-          -translate-x-1/2                     /* center align exactly */
+          absolute left-1/2 bottom-[-58px]    
+          -translate-x-1/2                    
           md:bottom-[-60px]
           w-[220px] md:w-[230px]
-          rotate-[22deg]                       /* same 1st screenshot tilt */
-          z-20                                 /* ensure above bg */
+          rotate-[22deg]                      
+          z-20 lg:right-10 lg:left-auto                                
         "
       >
         <Image

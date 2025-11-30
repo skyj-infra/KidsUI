@@ -9,7 +9,7 @@ export default function OtherEvents() {
 
   return (
     <section
-      className="relative w-full py-20 h-[1050px] pt-[6rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+      className="relative w-full py-20 lg:px-10 h-[1050px] pt-[6rem] lg:pt-8 lg:h-full text-center  bg-[url('/images/bg-cloud-mobile.png')]        
    /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
 

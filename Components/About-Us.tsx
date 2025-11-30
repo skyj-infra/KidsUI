@@ -39,7 +39,7 @@ export default function AboutKidsSection() {
         <div className="relative md:w-1/2 flex justify-center md:justify-end">
 
           {/* Kids Photo */}
-          <div className="w-[200px] -ml-24 md:w-[330px] transform rotate-[-12deg]  shadow-[8px_8px_25px_rgba(0,0,0,0.75)] shadow-black/80 ">
+          <div className="w-[200px] -ml-24 transform rotate-[-12deg]  shadow-[8px_8px_25px_rgba(0,0,0,0.75)] shadow-black/80 ">
             <Image
               src="/images/about-kids-img.png"
               width={200}
@@ -51,7 +51,7 @@ export default function AboutKidsSection() {
 
         {/* Astronaut Graphic */}
         <div className="absolute right-[-10px] bottom-[100px] transform rotate-[8deg] 
-                        md:right-[-40px] md:bottom-[-20px] w-[180px] md:w-[250px]">
+                        md:right-[-40px] md:bottom-[-20px] w-[180px]">
           <Image
             src="/images/characters/Space Character 9.png"
             width={300}

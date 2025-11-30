@@ -22,11 +22,11 @@ export default function BlogsSection() {
 
   return (
     <section
-      className="w-full py-12 py-20 px-5 h-[1100px] pt-[8rem] lg:pt-8 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+      className="w-full lg:py-12 py-20 px-5 h-[1100px] pt-[8rem] lg:pt-8 lg:h-full  text-center  bg-[url('/images/bg-cloud-mobile.png')]        
    /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
       {/* Heading */}
-      <div className="text-center mb-6">
+      <div className="text-center lg:mt-16 mb-6">
         <h2 className="text-white text-2xl font-bold">OUR</h2>
         <h3 className="text-orange-500 text-4xl font-extrabold -mt-1">
           Blogs

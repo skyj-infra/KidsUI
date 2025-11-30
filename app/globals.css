@@ -33,3 +33,51 @@ body {
   width: 12px;
   height: 12px;
 }
+
+
+/* === CUSTOM WHY SKYJUMPER PAGINATION === */
+
+/* PAGINATION WRAPPER LIKE YOUR IMAGE */
+.swiper-pagination {
+  background: rgba(255, 255, 255, 0.933);
+  justify-content: center;
+  border-radius: 30px;
+  padding: 6px 20px;
+  width: fit-content;
+  margin: 65px auto 15 auto !important; /* ⬅ Here is the gap */
+  bottom: -10px !important;           /* Keeps it below slides */
+  position: relative !important;
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Inactive bullets */
+.swiper-pagination-bullet {
+  background: #3a3a3b !important;  /* dark gray */
+  width: 8px;
+  height: 8px;
+  opacity: 1 !important;  
+}
+
+/* ACTIVE orange bar — EXACT LOOK */
+.swiper-pagination-bullet-active {
+  background: #ff6a34 !important;
+  width: 18px !important;
+  height: 8px !important;
+  border-radius: 10px !important;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 50% !important;
+}
+
+
+@media (min-width: 1024px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: 15% !important; /* The new width for desktop */
+  }
+}
+
+
+

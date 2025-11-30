@@ -45,6 +45,12 @@ export default function WhySkyjumperKids() {
       age: "(FUN & UNIQUE)",
       desc: "The perfect place to celebrate unforgettable birthdays.",
     },
+    {
+      img: "/images/2kids-imgnew.png",
+      title: "BIRTHDAY PARTIES",
+      age: "(FUN & UNIQUE)",
+      desc: "The perfect place to celebrate unforgettable birthdays.",
+    },
     
   ];
 
@@ -53,7 +59,7 @@ export default function WhySkyjumperKids() {
       className={
       isLocations
         ? "w-full py-8 lg:mt-8 lg:mb-8 px-5 h-[950px] pt-[14rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile-sm.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
-        : "h-[1200px] pt-[18rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile.png')]  /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+        : "h-[1200px] pt-[14rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile.png')]  /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     }
     >
       
@@ -84,14 +90,20 @@ export default function WhySkyjumperKids() {
         >
           {items.map((item, i) => (
             <SwiperSlide key={i} className="flex justify-center">
-              <div className="ackdrop-blur-xl 
-            rounded-3xl 
-            w-[280px] 
-            border-2 border-white/80 
-            shadow-xl
-            bg-[url('/images/kids-bg-img.png')]
-            bg-cover bg-center bg-no-repeat
+              <div className="
+              relative
+              backdrop-blur-xl 
+              rounded-3xl 
+              w-[280px] 
+              border-2 border-white/80 
+              shadow-[0_10px_35px_rgba(0,0,0,0.75)]
+              bg-[url('/images/kids-bg-img.png')]
+              bg-cover bg-center bg-no-repeat
+              overflow-hidden
             ">
+              {/* Glow Ring */}
+              <div className="absolute inset-0 rounded-3xl pointer-events-none
+                shadow-[inset_0_0_40px_10px_rgba(255,255,255,0.18)]"></div>
 
                 {/* Image */}
                 <div className="overflow-hidden mb-4">
@@ -106,7 +118,7 @@ export default function WhySkyjumperKids() {
 
                 {/* Text Box */}
                 <div className="p-3 -mt-7">
-                  <div className="border border-white/40 rounded-2xl p-4">
+                  <div className="border border-white/80 rounded-2xl p-4">
                     <h4 className="text-white text-lg font-extrabold leading-tight">
                       {item.title}
                     </h4>
@@ -130,7 +142,7 @@ export default function WhySkyjumperKids() {
             alt="Astronaut"
             width={350}
             height={400}
-            className="mt-28 -ml-6"
+            className="mt-17 -ml-6"
           />
         </div>
 
@@ -152,8 +164,8 @@ export default function WhySkyjumperKids() {
             spaceBetween={40}
 
             pagination={{
-              clickable: true,
-              el: ".why-pagination",
+                clickable: true,
+                dynamicBullets: false,
             }}
             className="pb-16"
           >
@@ -161,15 +173,20 @@ export default function WhySkyjumperKids() {
               <SwiperSlide key={i} className="flex justify-center">
                 <div
                   className="
+                    relative
                     backdrop-blur-xl 
                     rounded-3xl 
                     w-[390px] h-[430px]
                     border-2 border-white/80 
-                    shadow-xl
+                    shadow-[0_10px_35px_rgba(0,0,0,0.75)]
                     bg-[url('/images/kids-bg-img.png')]
                     bg-cover bg-center bg-no-repeat
+                    overflow-hidden
                   "
                 >
+                  {/* Glow Ring */}
+                  <div className="absolute inset-0 rounded-3xl pointer-events-none
+                    shadow-[inset_0_0_40px_10px_rgba(255,255,255,0.18)]"></div>
                   {/* Image */}
                   <div className="overflow-hidden mb-4">
                     <Image

@@ -137,7 +137,7 @@ export default function ParentsZone() {
       </div>
 
       {/* BOTTOM ASTRONAUT */}
-      <div className="absolute -bottom-4 -mb-20 right-0 w-[230px]">
+      <div className="absolute -bottom-4 -mb-24 right-0 lg:right-5 w-[230px]">
         <Image
           src={astronaut}
           alt="Astronaut"
