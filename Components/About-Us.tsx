@@ -51,11 +51,11 @@ export default function AboutKidsSection() {
 
         {/* Astronaut Graphic */}
         <div className="absolute right-[-10px] bottom-[100px] transform rotate-[8deg] 
-                        md:right-[-40px] md:bottom-[-20px] w-[180px]">
+                        md:right-[-10px] md:bottom-[-50px] w-[180px]">
           <Image
             src="/images/characters/Space Character 9.png"
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             alt="Astronaut Rocket"
             className="object-contain"
           />
