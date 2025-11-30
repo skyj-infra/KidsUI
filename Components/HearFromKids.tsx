@@ -88,7 +88,10 @@ export default function HearFromKids() {
       </div>
 
       {/* ---------- Bottom Astronaut ---------- */}
-      <div className="w-[230px] absolute left-[6rem] z-10 -translate-x-1/2 translate-y-10 lg:hidden">
+      <div 
+        className={`w-[230px] absolute z-10 -translate-x-1/2 translate-y-10 lg:hidden
+         ${isLocations ? "left-[12rem]" : "left-[6rem]"}`}
+        >
         <Image
           src={
             isLocations

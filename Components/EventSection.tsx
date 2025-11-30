@@ -9,27 +9,29 @@ export default function OtherEvents() {
 
   return (
     <section
-      className="relative w-full py-20 lg:px-10 h-[1050px] pt-[6rem] lg:pt-8 lg:h-full text-center  bg-[url('/images/bg-cloud-mobile.png')]        
-   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
-    >
+      className = { isLocations
+          ? "relative w-full py-20 lg:px-10 h-[1000px] pt-[6rem] lg:pt-8 lg:h-full text-center  bg-[url('/images/bg-cloud-mobile.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+          : "relative w-full py-20 lg:px-10 h-[1050px] pt-[6rem] lg:pt-8 lg:h-full text-center  bg-[url('/images/bg-cloud-mobile.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+      } 
+   >
 
       {/* ========== TOP ASTRONAUT (conditional) ========== */}
       <div
-        className=" w-[230px]
-          absolute top-0 left-1/2 -translate-x-1/2 -translate-y-10
-          lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0
-        "
-      >
+        className={ isLocations
+           ? "w-[250px] absolute mt-[-13rem] left-1/2 -translate-x-1/2 -translate-y-10 lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0"
+           : "w-[220px] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-10 lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0"
+        }
+           >
         <Image
           src={
             isLocations
-              ? "/images/Astro/astro-img4.png" // ONLY on /locations
+              ? "/images/characters/Space Character 9.png" // ONLY on /locations
               : "/images/characters/Space Character 3.png" // default
           }
           alt="astronaut"
-          width={230}
-          height={230}
-          className="-mt-8"
+          width={250}
+          height={250}
+          className= {isLocations ? "transform rotate-[6deg]" : "-mt-8"}
         />
       </div>
 
@@ -47,7 +49,7 @@ export default function OtherEvents() {
       {/* ========= CARDS GRID ========= */}
       <div
         className="
-          mt-24 mb-14 px-6 gap-10 
+          mt-24 mb-14 px-6 gap-12 
           grid grid-cols-1 
           md:grid-cols-2 
           max-w-4xl md:max-w-6xl mx-auto

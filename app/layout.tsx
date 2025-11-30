@@ -15,13 +15,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`
+        ${poppins.variable}
+        ${tungsten.variable}
+        ${superjoyful.variable}
+      `}
+    >
       <body
-        className={`
+          className={`
+          font-poppins          /* global default font */
           ${poppins.variable}
           ${tungsten.variable}
           ${superjoyful.variable}
-          antialiased
         `}
       >
         <Navbar />
@@ -29,5 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
       </body>
     </html>
+
   );
 }

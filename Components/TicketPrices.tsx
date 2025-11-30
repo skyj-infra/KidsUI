@@ -2,7 +2,9 @@
 
 export default function TicketPrices() {
   return (
-    <section className="w-full flex flex-col items-center pt-10 pb-20 px-4 lg:px-10">
+    <section className="w-full flex flex-col items-center pt-[13rem] lg:pt-[5rem] pb-20 px-4 lg:px-10  
+     relative h-[1750px] lg:h-full bg-[url('/images/bg-cloud-tikect-mobile.png')] bg-cover bg-center bg-no-repeat">
+
 
       {/* Heading */}
       <h2 className="text-4xl lg:text-5xl font-extrabold text-black text-center leading-tight">
@@ -18,7 +20,7 @@ export default function TicketPrices() {
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-10 mt-12">
 
         {/* ===== PRICE CARD 1 ===== */}
-        <div className="w-full bg-white rounded-3xl shadow-[0_8px_25px_rgba(0,0,0,0.2)] p-8">
+        <div className="w-full bg-white rounded-3xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] p-8">
           
           <div className="flex justify-center mb-6">
             <div className="bg-orange-500 text-white px-8 py-2 rounded-full font-semibold text-lg">
@@ -28,14 +30,14 @@ export default function TicketPrices() {
 
           <table className="w-full text-center">
             <thead>
-              <tr className="text-gray-800 font-semibold text-lg">
+              <tr className="text-gray-800 font-semibold text-sm lg:text-lg">
                 <th className="pb-3">DURATION</th>
                 <th className="pb-3">WEEKDAYS</th>
                 <th className="pb-3">WEEKENDS</th>
               </tr>
             </thead>
 
-            <tbody className="text-gray-900 font-medium text-lg">
+            <tbody className="text-gray-900 font-medium text-base lg:text-lg">
               <tr className="border-t">
                 <td className="py-4">30 MIN</td>
                 <td>390</td>
@@ -58,7 +60,7 @@ export default function TicketPrices() {
         </div>
 
         {/* ===== PRICE CARD 2 ===== */}
-        <div className="w-full bg-white rounded-3xl shadow-[0_8px_25px_rgba(0,0,0,0.2)] p-8">
+        <div className="w-full bg-white rounded-3xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] p-8">
           
           <div className="flex justify-center mb-6">
             <div className="bg-orange-500 text-white px-8 py-2 rounded-full font-semibold text-lg">
@@ -68,14 +70,14 @@ export default function TicketPrices() {
 
           <table className="w-full text-center">
             <thead>
-              <tr className="text-gray-800 font-semibold text-lg">
+              <tr className="text-gray-800 font-semibold text-sm lg:text-lg">
                 <th className="pb-3">DURATION</th>
                 <th className="pb-3">WEEKDAYS</th>
                 <th className="pb-3">WEEKENDS</th>
               </tr>
             </thead>
 
-            <tbody className="text-gray-900 font-medium text-lg">
+            <tbody className="text-gray-900 font-medium text-base lg:text-lg">
               <tr className="border-t">
                 <td className="py-4">30 MIN</td>
                 <td>390</td>

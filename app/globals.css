@@ -23,6 +23,21 @@ body {
   font-family: var(--font-poppins);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+  line-height: 1.2;
+}
+
+p {
+  font-family: var(--font-poppins);
+  line-height: 1.2;
+}
+
 .kids-pagination .swiper-pagination-bullet {
   background: #fff !important;
   opacity: 0.8;
@@ -39,7 +54,7 @@ body {
 
 /* PAGINATION WRAPPER LIKE YOUR IMAGE */
 .swiper-pagination {
-  background: rgba(255, 255, 255, 0.933);
+  background: #e7e5e5ee;
   justify-content: center;
   border-radius: 30px;
   padding: 6px 20px;
@@ -77,6 +92,12 @@ body {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     width: 15% !important; /* The new width for desktop */
   }
+}
+
+@media (min-width: 64rem) {
+    .lg\:w-full {
+        width: 98% !important;
+    }
 }
 
 

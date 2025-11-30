@@ -14,7 +14,7 @@ export default function Navbar() {
       {/* BACKGROUND BAR (DESKTOP ONLY) */}
       <div className="
         hidden lg:block absolute top-2 left-1/2 -translate-x-1/2 
-        w-[95%] h-[70px] rounded-[30px]
+        w-[94%] h-[70px] rounded-[30px]
         bg-gradient-to-r from-[#2a2a2a]/80 via-[#1a1a1a]/70 to-[#0b0b0b]/60
         backdrop-blur-xl shadow-[0px_0px_15px_rgba(0,0,0,0.4)]
         border border-white/10

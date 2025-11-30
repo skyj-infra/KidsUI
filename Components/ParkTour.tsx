@@ -35,41 +35,33 @@ export default function ParkTour() {
       <div className="max-w-[1500px] mx-auto mt-16">
 
         {/* Swiper */}
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          autoplay={{ delay: 2000, disableOnInteraction:false }}
+          loop={true}
+          spaceBetween={30}
+          slidesPerView={1}
 
-      <Swiper
-        modules={[Pagination, Autoplay]}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        spaceBetween={30}
-        slidesPerView={1}
+          pagination={{ clickable: true, dynamicBullets:false }}
 
-        pagination={{
-          clickable: true,
-          el: ".kids-pagination",  // LINKED BELOW
-        }}
 
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
+          breakpoints={{
+            640:{slidesPerView:1},
+            768:{slidesPerView:2},
+            1024:{slidesPerView:3},
+          }}
 
-        className="pb-14"  // MUST for visibility
-      >
-        {slides.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="w-full h-[450px] lg:h-[650px] rounded-3xl overflow-hidden shadow-xl bg-black border border-orange-400 bg-white/5 p-3">
-              <img src={item.img} className="w-full h-full object-cover rounded-3xl" />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          className="pb-14"
+        >
+          {slides.map((item,i)=>(
+            <SwiperSlide key={i}>
+              <div className="w-full h-[450px] lg:h-[650px] rounded-3xl overflow-hidden shadow-xl border-2 border-orange-400 bg-white/5 p-1">
+                <img src={item.img} className="w-full h-full object-cover rounded-3xl"/>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      {/* 🔥 Pagination bullets MUST be outside + styled */}
-      <div className="kids-pagination flex justify-center mt-6 !relative z-50"></div>
 
       </div>
     </section>

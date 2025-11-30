@@ -29,8 +29,8 @@ export default function FAQSection() {
 
   return (
     <section
-      className="w-full py-12 mb-24 px-6 bg-cover bg-center"
-    //   style={{ backgroundImage: "url('/images/bg-whykids.jpg')" }}
+      className="relative w-full py-12 pb-10 lg:pb-20 px-6 h-[820px] lg:pt-8 lg:h-full text-center  bg-[url('/images/cloud-down-bg-long.png')]        
+   /* desktop default */  bg-cover bg-center bg-no-repeat"
     >
 
       {/* ----------------- Heading ----------------- */}
@@ -86,7 +86,7 @@ export default function FAQSection() {
 
       </div>
              {/* 🚀 Bottom Astronaut — changes based on location */}
-            <div className="w-[180px] absolute left-1/2 -translate-x-1/2 translate-y-10 lg:hidden">
+            <div className="w-[180px] ml-[-5rem] absolute left-1/2 -translate-x-1/2 translate-y-10 lg:hidden">
               <Image
                 src="/images/characters/Space Character 7.png"
                 alt="astronaut"

@@ -18,7 +18,7 @@ export default function HearFromKids() {
   return (
     <section
       className="
-      relative                     /* IMPORTANT for absolute child */
+      relative  
       w-full h-[1300px] pt-[15rem] text-center 
       bg-[url('/images/bg-cloud-mobile.png')]
       md:bg-[url('/images/bg-whykids.jpg')]

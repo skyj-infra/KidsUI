@@ -58,7 +58,7 @@ export default function WhySkyjumperKids() {
     <section
       className={
       isLocations
-        ? "w-full py-8 lg:mt-8 lg:mb-8 px-5 h-[950px] pt-[14rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile-sm.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+        ? "w-full py-8 lg:mt-8 lg:mb-8 px-5 h-[950px] pt-[12rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile-sm.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
         : "h-[1200px] pt-[14rem] lg:pt-8 lg:h-full py-12 px-5  text-center  bg-[url('/images/bg-cloud-mobile.png')]  /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     }
     >
