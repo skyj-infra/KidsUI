@@ -12,9 +12,22 @@ export default {
         primary: "#f86624",
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)", "system-ui", "sans-serif"],
-        tungsten: ["var(--font-tungsten)", "sans-serif"],
-        superjoyful: ["var(--font-superjoyful)", "cursive"],
+        poppins: [
+          "var(--font-poppins)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
+        tungsten: [
+          "var(--font-tungsten)",
+          "ui-serif",
+          "Georgia",
+          "serif",
+        ],
+        superjoyful: [
+          "var(--font-superjoyful)",
+          "cursive",
+        ],
       },
     },
   },
