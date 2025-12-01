@@ -155,7 +155,7 @@ export default function WhySkyjumperKids() {
       {/* DESKTOP — 3 COLUMN CAROUSEL */}
       
       <div className="hidden md:block mt-12 w-full">
-        <div className="max-w-[1500px] mx-auto px-6 lg:ml-[6.8rem]">
+        <div className="max-w-[1500px] mx-auto px-6 lg:ml-[2.8rem]">
 
           <Swiper
             modules={[Autoplay, Pagination]}
