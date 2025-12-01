@@ -43,10 +43,10 @@ export default function GallerySection() {
     >
       {/* Heading */}
       <div className={`text-center lg:mt-16 mb-6 ${isLocations ? "mt-20" : "mt-24"}`}>
-        <h1 className={`text-black text-2xl font-extrabold tracking-wide ${isLocations ? "text-white" : ""}`}>
+        <h1 className={`text-black text-2xl md:text-[46px] font-extrabold tracking-wide ${isLocations ? "text-white  md:text-[46px]" : ""}`}>
           OUR
         </h1>
-        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h2 className={`text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1 ${isLocations ? "md:text-[44px]" : "md:text-[44px]"}`}>
           Gallery
         </h2>
         <div className={`h-1 w-20 bg-black mx-auto mt-2 rounded-full ${isLocations ? "bg-white" : ""}`} />

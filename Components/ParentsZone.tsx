@@ -11,10 +11,10 @@ export default function ParentsZone() {
 
       {/* HEADING */}
       <div className="text-center mb-10 ">
-        <h1 className="text-black text-3xl font-extrabold tracking-wide">
+        <h1 className="text-black text-3xl md:text-[46px] font-extrabold tracking-wide">
           PARENTS
         </h1>
-        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
           Zone
         </h2>
         <div className="h-1 w-20 bg-black mx-auto mt-2 rounded-full" />

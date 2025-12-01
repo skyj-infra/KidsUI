@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutKidsSection() {
   return (
-    <section className="w-full max-w-[1500px] mx-auto lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 text-center md:text-left
+    <section className="w-full max-w-[1500px] mx-auto lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 lg:px-20 text-center md:text-left
     relative h-[710px] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/cloud-upper-bg-long.png')]        
    /* desktop default */  bg-cover bg-center bg-no-repeat"
       >
@@ -14,11 +14,11 @@ export default function AboutKidsSection() {
         
         {/* Left Section (Text) */}
         <div className="md:w-1/2">
-          <h1 className="text-3xl md:text-4xl font-extrabold tracking-wide text-black">
+          <h1 className="text-3xl md:text-[46px] font-extrabold tracking-wide text-black">
             ABOUT
           </h1>
 
-          <h2 className="text-[32px] md:text-[40px] font-extrabold text-[#ff6a34] -mt-1">
+          <h2 className="text-[32px] md:text-[44px] font-extrabold text-[#ff6a34] -mt-1">
             Skyjumper Kids
           </h2>
 

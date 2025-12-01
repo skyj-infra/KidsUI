@@ -23,7 +23,7 @@ export default function HearFromKids() {
       bg-[url('/images/bg-cloud-mobile.png')]
       md:bg-[url('/images/bg-whykids.jpg')]
       bg-cover bg-center bg-no-repeat
-      px-5 py-12 lg:pt-8 lg:h-full
+      px-5 py-12 lg:pt-20 lg:h-full
       "
     >
 
@@ -44,10 +44,10 @@ export default function HearFromKids() {
 
       {/* ---------- Title ---------- */}
       <div className="text-center px-4">
-        <h1 className="text-white text-3xl font-bold tracking-wide">
+        <h1 className="text-white text-3xl md:text-[46px] font-bold tracking-wide">
           FUN IS SAFE AT
         </h1>
-        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
           Skyjumper Kids
         </h2>
         <div className="h-1 w-24 bg-white mx-auto mt-3 rounded-full" />

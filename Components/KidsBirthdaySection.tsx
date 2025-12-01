@@ -7,10 +7,10 @@ export default function KidsBirthdaySection() {
       <div className="max-w-[1500px] mx-auto pb-15 lg:pb-5 px-4 text-center">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-black tracking-wide">
+        <h2 className="text-3xl md:text-[46px] font-extrabold text-black tracking-wide">
           PERFECT SPOT FOR
         </h2>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#ff7a00] mt-1">
+        <h2 className="text-4xl md:text-[44px] font-extrabold text-[#ff7a00] mt-1">
           Kids Birthday
         </h2>
         <div className="w-24 h-[3px] bg-[#1a1a1a] mx-auto mt-3 mb-6"></div>

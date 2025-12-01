@@ -12,10 +12,10 @@ export default function OtherBrands() {
 
       {/* Heading */}
       <div className="text-center pt-10 lg:pt-0 mb-6">
-        <h1 className="text-black text-2xl font-extrabold tracking-wide">
+        <h1 className="text-black text-2xl md:text-[46px] font-extrabold tracking-wide">
           OUR OTHER
         </h1>
-        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
           Brands
         </h2>
         <div className="h-1 w-20 bg-black mx-auto mt-2 rounded-full" />

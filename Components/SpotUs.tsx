@@ -23,7 +23,7 @@ export default function SpotUsSection() {
             </h2>
 
             {/* DESKTOP VIEW – One Line */}
-            <h2 className="hidden lg:inline-block text-white text-4xl font-extrabold">
+            <h2 className="hidden lg:inline-block text-white text-4xl md:text-[44px] font-extrabold">
                 SPOT <span className="text-orange-500">Us</span>
             </h2>
 

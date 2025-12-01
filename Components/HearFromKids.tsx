@@ -42,13 +42,13 @@ export default function HearFromKids() {
       {/* ---------- Heading ---------- */}
       <div className="text-center mb-12">
         <h1
-          className={`text-2xl font-bold ${
-            isLocations ? "text-black" : "text-white"
+          className={`text-3xl md:text-[46px] font-bold ${
+            isLocations ? "text-black md:text-[46px]" : "text-white"
           }`}
         >
           {isLocations ? "HAPPY TALES OF" : "HEAR FROM"}
         </h1>
-        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
           Skyjumper Kids
         </h2>
         <div className="h-1 w-24 bg-white mx-auto mt-2 rounded-full" />

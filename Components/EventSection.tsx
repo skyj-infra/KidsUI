@@ -37,13 +37,13 @@ export default function OtherEvents() {
 
       {/* ========= HEADING ========= */}
       <div className="text-center mt-24">
-        <h1 className="text-white text-4xl lg:text-6xl font-extrabold tracking-widest">
+        <h1 className="text-white text-4xl lg:text-[46px] font-extrabold tracking-widest">
           OTHER
         </h1>
-        <h2 className="text-orange-500 text-5xl lg:text-7xl font-extrabold -mt-2">
+        <h2 className="text-orange-500 text-5xl lg:text-[44px] font-extrabold -mt-2">
           Events
         </h2>
-        <div className="w-24 lg:w-32 h-1 bg-white mx-auto mt-3"></div>
+        <div className="w-24 lg:w-20 h-1 bg-white mx-auto mt-3"></div>
       </div>
 
       {/* ========= CARDS GRID ========= */}

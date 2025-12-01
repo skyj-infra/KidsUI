@@ -23,10 +23,10 @@ export default function ParkTour() {
     >
             {/* ---------------- Title ---------------- */}
       <div className="text-center px-4">
-        <h1 className="text-black text-3xl font-bold tracking-wide">
+        <h1 className="text-black text-3xl md:text-[46px] font-bold tracking-wide">
           OUR
         </h1>
-        <h2 className="text-orange-500 text-4xl font-extrabold -mt-1">
+        <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
           Park Tour
         </h2>
         <div className="h-1 w-24 bg-black mx-auto mt-3 rounded-full" />

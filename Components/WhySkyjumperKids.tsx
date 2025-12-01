@@ -66,8 +66,12 @@ export default function WhySkyjumperKids() {
       
       <div className="mt-8">
         {/* Heading */}
-        <h1 className="text-white text-4xl font-extrabold">WHY</h1>
-        <h2 className="text-[#ff6a34] text-4xl font-extrabold -mt-2">
+        <h1 className={`text-white text-4xl md:text-[46px] font-extrabold ${
+            isLocations ? "md:text-[46px]" : ""
+          }`}>WHY</h1>
+        <h2 className={`text-[#ff6a34] text-4xl md:text-[44px] font-extrabold -mt-2 ${
+            isLocations ? "md:text-[44px]" : ""
+          }`}>
           Skyjumper Kids
         </h2>
         <div className="w-24 h-[3px] bg-white mx-auto mt-2"></div>
@@ -151,7 +155,7 @@ export default function WhySkyjumperKids() {
       {/* DESKTOP — 3 COLUMN CAROUSEL */}
       
       <div className="hidden md:block mt-12 w-full">
-        <div className="max-w-[1500px] mx-auto px-6">
+        <div className="max-w-[1500px] mx-auto px-6 lg:ml-[6.8rem]">
 
           <Swiper
             modules={[Autoplay, Pagination]}

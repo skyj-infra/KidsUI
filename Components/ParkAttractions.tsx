@@ -116,10 +116,10 @@ export default function ParkAttractions() {
     <section className="w-full pt-20 lg:px-10 pb-16 bg-white">
       {/* Heading */}
       <div className="text-center mb-8">
-        <h1 className="font-tungsten text-4xl text-black tracking-wide">
+        <h1 className="font-tungsten text-4xl md:text-[46px] text-black tracking-wide">
           PARK
         </h1>
-        <h2 className="font-joyful text-5xl text-orange-500 -mt-2">
+        <h2 className="font-joyful text-5xl md:text-[44px] text-orange-500 -mt-2">
           Attractions
         </h2>
         <div className="h-1 w-24 bg-gray-900 mx-auto mt-3 rounded-full" />

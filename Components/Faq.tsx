@@ -35,7 +35,7 @@ export default function FAQSection() {
 
       {/* ----------------- Heading ----------------- */}
       <div className="text-center max-w-[1500px] mx-auto">
-        <h2 className="text-orange-500 text-4xl font-extrabold">FAQs</h2>
+        <h2 className="text-orange-500 text-4xl md:text-[46px] font-extrabold">FAQs</h2>
         <div className="h-1 w-24 bg-black mx-auto mt-2 rounded-full" />
 
         <p className="text-black text-sm opacity-90 mt-4 max-w-md mx-auto leading-relaxed">
@@ -54,7 +54,7 @@ export default function FAQSection() {
         {faqData.map((faq, i) => (
           <div 
             key={i}
-            className="border-b border-gray-400 pb-4"
+            className="border-b border-gray-400 pb-4 text-left"
           >
             {/* Top row → Number + Question */}
             <div
@@ -66,7 +66,7 @@ export default function FAQSection() {
                 {faq.id}
               </div>
 
-              <p className="text-black font-semibold text-[15px] flex-1 ml-3">
+              <p className="text-black font-semibold text-[15px] lg:text-[20px] flex-1 ml-3">
                 {faq.question}
               </p>
 
