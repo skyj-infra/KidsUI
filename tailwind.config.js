@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#f86624",
+        primary: "var(--color-primary)",
       },
       fontFamily: {
         poppins: [

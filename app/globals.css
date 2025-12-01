@@ -3,13 +3,10 @@
 @import "swiper/css";
 @import "swiper/css/pagination";
 
-@theme {
-  --color-primary: #f86624;
-}
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #f86624;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +34,18 @@ body {
 
   .font-tungsten {
     font-family: var(--font-tungsten), ui-serif, Georgia, serif !important;
+  }
+
+  .text-primary {
+    color: var(--color-primary) !important;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary) !important;
+  }
+
+  .border-primary {
+    border-color: var(--color-primary) !important;
   }
 }
 
