@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function AboutKidsSection() {
   return (
-    <section className="w-full max-w-[1500px] mx-auto lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 lg:px-20 text-center md:text-left
-    relative h-[710px] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/cloud-upper-bg-long.png')]        
+    <section className="w-full max-w-[1500px] mx-auto mt-[-9rem] lg:mt-0 lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 lg:px-20 text-center md:text-left
+    relative h-[700px] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile-trans700.png')]        
    /* desktop default */  bg-cover bg-center bg-no-repeat"
       >
       
@@ -24,14 +24,11 @@ export default function AboutKidsSection() {
 
           <div className="w-20 h-[3px] bg-black mx-auto md:mx-0 mt-2 mb-6"></div>
 
-          <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed px-8 lg:px-0">
-            SkyJumper Kids is a dedicated indoor play and party destination 
-            designed specially for children aged from 3 to 13. More than just a 
-            playground, it is a vibrant center where imagination, physical 
-            activity, and social interaction flourish. With safe, high-energy 
-            attractions and a warm, parent-approved environment, it’s the perfect 
-            place for kids to jump, play, celebrate, and make unforgettable 
-            memories.
+          <p className="text-gray-700 text-[15px] md:text-[17px] leading-relaxed px-2 lg:px-0">
+            SkyJumper Kids is India’s first and only dedicated trampoline and soft-play park designed exclusively for children aged 3 to 13 years. Built around child-safety, age-appropriate growth, and worry-free fun, it gives kids a world made just for them — without the rush or safety concerns of older teens playing around.
+            Here, little explorers can jump, slide, climb, crawl, balance, and discover in a fully supervised, air-conditioned indoor environment. Every attraction from colourful soft-play structures and toddler zones to mini-trampolines, sensory play, interactive games, and beginner-friendly ninja challenges is thoughtfully created to boost motor skills, build confidence, strengthen social development, and encourage healthy movement.
+            Beyond everyday fun, SkyJumper Kids is also the perfect destination for unforgettable birthday parties, joyful playdates, and exciting school trips. With dedicated celebration zones, trained supervisors, safe padded infrastructure, and seamless planning support, every visit becomes a memory parents love and kids never forget.
+
           </p>
         </div>
 
@@ -39,7 +36,7 @@ export default function AboutKidsSection() {
         <div className="relative md:w-1/2 flex justify-center md:justify-end">
 
           {/* Kids Photo */}
-          <div className="w-[200px] mt-[2rem] lg:mt-[0] -ml-24 transform rotate-[-12deg]  shadow-[8px_8px_25px_rgba(0,0,0,0.75)] shadow-black/80 ">
+          <div className="w-[200px] mt-[1rem] lg:mt-[0] -ml-24 transform rotate-[-12deg]  shadow-[8px_8px_25px_rgba(0,0,0,0.75)] shadow-black/80 ">
             <Image
               src="/images/about-kids-img.png"
               width={200}

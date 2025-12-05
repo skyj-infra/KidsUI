@@ -2,7 +2,7 @@
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[90vh] md:h-screen overflow-hidden">
+    <section className="relative w-full h-[90vh] z-[-1] md:h-screen overflow-hidden">
 
       {/* Background Video */}
       <video

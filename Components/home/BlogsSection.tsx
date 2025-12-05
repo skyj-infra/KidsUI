@@ -22,7 +22,7 @@ export default function BlogsSection() {
 
   return (
     <section
-      className="w-full lg:py-12 py-20 px-5 h-[1100px] pt-[8rem] lg:pt-8 lg:h-full  text-center  bg-[url('/images/bg-cloud-mobile.png')]        
+      className="w-full lg:py-12 py-20 px-5 h-[1030px] pt-[8rem] lg:pt-8 lg:h-full  text-center  bg-[url('/images/bg-cloud-mobile.png')]        
    /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
     >
       {/* Heading */}
@@ -40,7 +40,7 @@ export default function BlogsSection() {
         {blogs.map((item, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl p-4 shadow-xl flex gap-3"
+            className="bg-white h-[140px] lg:h-full rounded-3xl p-4 shadow-xl flex gap-3"
           >
             {/* Blog Image */}
             <div className="relative w-24 h-24 lg:w-54 lg:h-54 rounded-2xl overflow-hidden shrink-0">
@@ -53,13 +53,13 @@ export default function BlogsSection() {
             </div>
 
             {/* Blog Content */}
-            <div className="text-left flex flex-col justify-center">
+            <div className="text-left flex flex-col px-4 justify-start">
               <div>
                 <h5 className="text-black text-[25px] lg:text-[40px] font-bold">{item.title}</h5>
                 <p className="text-gray-700 text-sm mt-1">{item.desc}</p>
               </div>
 
-              <button className="mb-[-1.5rem] font-tungsten tracking-widest bg-orange-500 text-white text-sm px-2 py-1 rounded-full mt-3 w-fit flex items-center gap-1">
+              <button className="mb-[-2rem] font-tungsten tracking-widest bg-orange-500 text-white text-sm px-2 py-1 rounded-full mt-3 w-fit flex items-center gap-1">
                 READ MORE
                  <span className="w-5 h-5 flex items-center justify-center 
                  border-2 border-white rounded-full text-[10px] font-bold leading-none">

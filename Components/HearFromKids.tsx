@@ -10,6 +10,8 @@ import { usePathname } from "next/navigation";
 export default function HearFromKids() {
   const pathname = usePathname();
   const isLocations = pathname === "/locations";
+  const isbirthday = pathname === "/birthday-page";
+
 
   const videos = [
     "https://skyjumperstoragemedia.b-cdn.net/videos/b982d88e-f149-48a3-a637-bcb324b8a878-Pune_tales_3.mp4?sv=2025-11-05&st=2025-11-07T17%3A50%3A06Z&se=2026-11-07T17%3A50%3A06Z&sr=b&sp=r&sig=9SEOFYM9ClpImksXzVlH20JZN9DALVPeElsAzyZrF%2FU%3D&rscd=inline&rsct=video%2Fmp4",
@@ -21,13 +23,15 @@ export default function HearFromKids() {
   return (
     <section
       className={
-        isLocations
-          ? "w-full py-8 px-5 mb-20 bg-white"
-          : "w-full lg:px-5 pt-[12rem] lg:pt-16 pb-20 h-[1050px] text-center bg-[url('/images/bg-cloud-mobile.png')] md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+       isbirthday
+        ? "w-full py-10 pt-20 px-5 mb-20 bg-white"
+        : isLocations
+        ? "w-full py-8 px-5 mb-20 bg-white"
+        : "w-full lg:px-5 pt-[12rem] lg:pt-16 pb-20 h-[1050px] text-center bg-[url('/images/bg-cloud-mobile.png')] md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
       }
     >
       {/* 🔥 Top Astronaut */}
-      {!isLocations && (
+      {!isLocations && !isbirthday && (
         <div className="w-[250px] mt-[-18rem] rotate-[90deg] scale-x-[-1] absolute left-1/2 -translate-x-1/2 md:top-6 md:left-10 md:-translate-x-0">
           <Image
             src="/images/characters/Space Character 4.png"
@@ -42,17 +46,24 @@ export default function HearFromKids() {
       {/* ---------- Heading ---------- */}
       <div className="text-center mb-12">
         <h1
-          className={`text-3xl md:text-[46px] font-bold ${
-            isLocations ? "text-black md:text-[46px]" : "text-white"
+          className={`text-4xl uppercase md:text-[46px] font-bold ${
+            isLocations || isbirthday ? "text-black md:text-[46px]" : "text-white"
           }`}
         >
-          {isLocations ? "HAPPY TALES OF" : "HEAR FROM"}
+          {isbirthday
+            ? "Birthday"
+            : isLocations
+            ? "HAPPY TALES OF"
+            : "HEAR FROM"}
         </h1>
+
         <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
-          Skyjumper Kids
+          {isbirthday ? "Tales" : "Skyjumper Kids"} 
         </h2>
+
         <div className="h-1 w-24 bg-white mx-auto mt-2 rounded-full" />
       </div>
+
 
       {/* ---------- SLIDER ---------- */}
       <div className="max-w-[1500px] mx-auto">
@@ -88,22 +99,25 @@ export default function HearFromKids() {
       </div>
 
       {/* ---------- Bottom Astronaut ---------- */}
-      <div 
-        className={`w-[230px] absolute z-10 -translate-x-1/2 translate-y-10 lg:hidden
-         ${isLocations ? "left-[12rem]" : "left-[6rem]"}`}
+      {!isbirthday && (
+        <div
+          className={`w-[230px] absolute z-10 -translate-x-1/2 translate-y-10 lg:hidden
+            ${isLocations ? "left-[12rem]" : "left-[6rem]"}`}
         >
-        <Image
-          src={
-            isLocations
-              ? "/images/characters/Space Character 13.png"
-              : "/images/characters/Space Character 7.png"
-          }
-          alt="astronaut"
-          width={230}
-          height={230}
-          className="mt-2"
-        />
-      </div>
+          <Image
+            src={
+              isLocations
+                ? "/images/characters/Space Character 13.png"
+                : "/images/characters/Space Character 7.png"
+            }
+            alt="astronaut"
+            width={230}
+            height={230}
+            className="mt-2"
+          />
+        </div>
+      )}
+
     </section>
   );
 }

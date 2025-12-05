@@ -41,8 +41,8 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#171717] text-gray-300 py-8 sm:py-12">
       {/* Main Footer Content */}
-      <div className="w-full max-w-none px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 max-w-7xl mx-auto">
+      <div className="w-full max-w-[1500px] mx-auto px-4 lg:px-16 xl:px-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 ">
         {/* Column 1: Brand */}
         <motion.div
           className="col-span-1 sm:col-span-2 lg:col-span-2"
@@ -138,7 +138,7 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1500px] mx-auto">
           <div className="border-t border-gray-700 mt-6 sm:mt-8 pt-4 sm:pt-6 text-xs sm:text-sm text-gray-500">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
               

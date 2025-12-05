@@ -32,9 +32,9 @@ export default function ParentsZone() {
             <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[220px] flex flex-col justify-between">
               <div className="p-4">
                 <h5 className="text-[22px] lg:text-[50px] font-bold leading-tight">THE PLAY BUDDY</h5>
-                <h6 className="text-[11px] mt-1 opacity-90 leading-tight">
+                <p className="!text-[13px] font-tungsten tracking-widest mt-1 opacity-90 leading-tight">
                   JUMP IN AND ROLL WITH THE LITTLE ONES.
-                </h6>
+                </p>
               </div>
 
               <div className="relative w-full h-[190px] rounded-3xl overflow-hidden">
@@ -51,7 +51,7 @@ export default function ParentsZone() {
             <div className="bg-orange-500 rounded-3xl shadow-lg text-white h-[220px] flex flex-col justify-between">
               <div className="p-4">
                 <h5 className="text-[22px] lg:text-[50px] font-bold leading-tight">THE FREE BIRD</h5>
-                <h6 className="text-[11px] mt-1 opacity-90 leading-tight">
+                <h6 className="!text-[13px] font-tungsten tracking-widest mt-1 opacity-90 leading-tight">
                   DROP THEM, STEP OUT, ENJOY THE MALL. WE’VE GOT THE KIDS COVERED.
                 </h6>
               </div>
@@ -73,7 +73,7 @@ export default function ParentsZone() {
             <div className="bg-white rounded-3xl shadow-lg border border-gray-200 h-[220px] w-full flex flex-col justify-between">
               <div className="p-4">
                 <h5 className="text-[22px] lg:text-[50px] font-bold text-black leading-tight">THE CHILL MODE</h5>
-                <h6 className="text-[11px] mt-1 text-gray-700 leading-tight">
+                <h6 className="!text-[13px] font-tungsten tracking-widest mt-1 text-gray-700 leading-tight">
                   SIT BACK IN OUR CAFÉ — COFFEE, WORK, GOSSIP… YOUR CHOICE.
                 </h6>
               </div>
