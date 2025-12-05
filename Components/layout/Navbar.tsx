@@ -22,14 +22,14 @@ export default function Navbar() {
       </div>
 
       {/* Logo */}
-      <div className="relative ml-[-2rem] w-28 h-10 lg:w-40 lg:h-12 z-[200]">
+       <Link href="/" className="relative ml-[-2rem] w-28 h-10 lg:w-40 lg:h-12 z-[200]">
         <Image
           src="/images/Skyjumper-kids-Logo-V2.png"
           alt="Skyjumper Kids Logo"
           fill
           className="object-contain"
         />
-      </div>
+      </Link>
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex items-center gap-10 text-white font-medium z-[200]">
@@ -49,17 +49,17 @@ export default function Navbar() {
           <span>School Trip</span>
         </div>
 
-        <div className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
+        <Link href="/birthday-page" className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
           <Cake size={20} />
           <span>Birthday Party</span>
-        </div>
+        </Link>
 
         {/* Orange Button */}
         <button className="
           bg-orange-500 px-6 py-3 rounded-full font-semibold shadow-lg
           hover:bg-orange-600 transition
         ">
-          Contact Us
+          Find your Nearest Park
         </button>
       </div>
 
@@ -90,10 +90,10 @@ export default function Navbar() {
             <Home size={20} />
             <span className="text-lg">School Trip</span>
           </div>
-          <div className="flex items-center gap-2">
+          <Link href="/birthday-page" className="flex items-center gap-2">
             <Cake size={20} />
             <span className="text-lg">Birthday Party</span>
-          </div>
+          </Link>
         </div>
       )}
     </nav>

@@ -21,7 +21,7 @@ export default function EnquiryForm({ textColor = "black" }) {
         {/* LEFT SIDE — HEADINGS */}
         <div className="text-center md:text-left">
           <h1
-            className={`text-2xl md:text-4xl font-black text-${textColor} leading-tight`}
+            className={`text-3xl md:text-4xl font-black text-${textColor} leading-tight`}
           >
             FILL THE FORM TO <br /> ENQUIRE ABOUT
           </h1>

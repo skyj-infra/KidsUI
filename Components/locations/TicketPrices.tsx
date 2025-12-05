@@ -2,7 +2,7 @@
 
 export default function TicketPrices() {
   return (
-    <section className="w-full flex flex-col items-center pt-[13rem] lg:pt-[5rem] pb-20 px-4 lg:px-10  
+    <section className="w-full flex flex-col items-center mt-[-11rem] lg:mt-0 pt-[14rem] lg:pt-[5rem] pb-20 px-4 lg:px-10  
      relative h-[1750px] lg:h-full bg-[url('/images/bg-cloud-tikect-mobile.png')] bg-cover bg-center bg-no-repeat">
 
 

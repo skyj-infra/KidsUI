@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutKidsSection() {
   return (
-    <section className="w-full max-w-[1500px] mx-auto mt-[-9rem] lg:mt-0 lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 lg:px-20 text-center md:text-left
+    <section className="w-full max-w-[1500px] mx-auto mt-[-12rem] lg:mt-0 lg:py-16 md:mb-[-8rem] lg:mb-[1rem] px-6 lg:px-20 text-center md:text-left
     relative h-[700px] lg:pt-16 lg:h-full py-12 text-center  bg-[url('/images/bg-cloud-mobile-trans700.png')]        
    /* desktop default */  bg-cover bg-center bg-no-repeat"
       >
