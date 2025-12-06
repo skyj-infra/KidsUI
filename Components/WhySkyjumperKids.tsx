@@ -66,7 +66,7 @@ export default function WhySkyjumperKids() {
       
       <div className="mt-8">
         {/* Heading */}
-        <h1 className={`text-white text-4xl md:text-[46px] font-extrabold ${
+        <h1 className={`text-white text-3xl md:text-[46px] font-extrabold ${
             isLocations ? "md:text-[46px]" : ""
           }`}>WHY</h1>
         <h2 className={`text-[#ff6a34] text-4xl md:text-[44px] font-extrabold -mt-2 ${

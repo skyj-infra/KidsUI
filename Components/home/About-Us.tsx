@@ -18,7 +18,7 @@ export default function AboutKidsSection() {
             ABOUT
           </h1>
 
-          <h2 className="text-[32px] md:text-[44px] font-extrabold text-[#ff6a34] -mt-1">
+          <h2 className="text-4xl md:text-[44px] font-extrabold text-[#ff6a34] -mt-1">
             Skyjumper Kids
           </h2>
 

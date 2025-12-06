@@ -1,7 +1,9 @@
 "use client";
 import React, { useRef } from "react";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
-export default function EnquiryForm({ textColor = "black" }) {
+export default function EnquiryForm({ textColor = "black", hideAstro = false }) {
   const dateRef = useRef<HTMLInputElement>(null);
 
   const openCalendar = () => {
@@ -12,8 +14,32 @@ export default function EnquiryForm({ textColor = "black" }) {
     }
   };
 
+  const pathname = usePathname();
+  const isschool = pathname === "/school-trip";
+
+
   return (
     <section className="w-full flex flex-col items-center py-12 px-4">
+
+        {/* 🔥 Top Astronaut */}
+        {!hideAstro && (
+          <div
+            className="w-[190px] mt-[-10rem] absolute left-1/2 -translate-x-1/2 -translate-y-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0"
+          >
+            <Image
+              src={
+                isschool
+                  ? "/images/characters/Space Character 3.png"
+                  : "/images/characters/Space Character 5.png"
+              }
+              width={200}
+              height={200}
+              alt="astronaut"
+              className="drop-shadow-xl select-none pointer-events-none"
+            />
+          </div>
+        )}
+
 
       {/* DESKTOP GRID: 2 COLUMNS */}
       <div className="w-full max-w-[1500px] lg:pt-[24px] lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-15 gap-8 items-center">
@@ -27,7 +53,7 @@ export default function EnquiryForm({ textColor = "black" }) {
           </h1>
 
           <h2 className="text-4xl md:text-6xl font-extrabold text-primary mt-2">
-            Birthday Party
+           {isschool ? "School Trip" : "Birthday Party"}
           </h2>
 
           <div className={`w-16 md:w-20 h-1 bg-${textColor} mt-3 mb-8 md:mx-0 mx-auto`}></div>

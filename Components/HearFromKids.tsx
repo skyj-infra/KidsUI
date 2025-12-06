@@ -11,6 +11,7 @@ export default function HearFromKids() {
   const pathname = usePathname();
   const isLocations = pathname === "/locations";
   const isbirthday = pathname === "/birthday-page";
+  const isschool = pathname === "/school-trip";
 
 
   const videos = [
@@ -23,7 +24,7 @@ export default function HearFromKids() {
   return (
     <section
       className={
-       isbirthday
+       isbirthday || isschool
         ? "w-full py-10 pt-20 px-5 mb-20 bg-white"
         : isLocations
         ? "w-full py-8 px-5 mb-20 bg-white"
@@ -31,7 +32,7 @@ export default function HearFromKids() {
       }
     >
       {/* 🔥 Top Astronaut */}
-      {!isLocations && !isbirthday && (
+      {!isLocations && !isbirthday && !isschool && (
         <div className="w-[250px] mt-[-18rem] rotate-[90deg] scale-x-[-1] absolute left-1/2 -translate-x-1/2 md:top-6 md:left-10 md:-translate-x-0">
           <Image
             src="/images/characters/Space Character 4.png"
@@ -46,19 +47,21 @@ export default function HearFromKids() {
       {/* ---------- Heading ---------- */}
       <div className="text-center mb-12">
         <h1
-          className={`text-4xl uppercase md:text-[46px] font-bold ${
-            isLocations || isbirthday ? "text-black md:text-[46px]" : "text-white"
+          className={`text-3xl uppercase md:text-[46px] font-bold ${
+            isLocations || isbirthday || isschool ? "text-black" : "text-white"
           }`}
         >
           {isbirthday
             ? "Birthday"
+            : isschool
+            ? "School"
             : isLocations
             ? "HAPPY TALES OF"
             : "HEAR FROM"}
         </h1>
 
         <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
-          {isbirthday ? "Tales" : "Skyjumper Kids"} 
+          {isbirthday || isschool ? "Tales" : "Skyjumper Kids"} 
         </h2>
 
         <div className="h-1 w-24 bg-white mx-auto mt-2 rounded-full" />
@@ -99,7 +102,7 @@ export default function HearFromKids() {
       </div>
 
       {/* ---------- Bottom Astronaut ---------- */}
-      {!isbirthday && (
+      {!isbirthday &&  !isschool && (
         <div
           className={`w-[230px] absolute z-10 -translate-x-1/2 translate-y-10 lg:hidden
             ${isLocations ? "left-[12rem]" : "left-[6rem]"}`}

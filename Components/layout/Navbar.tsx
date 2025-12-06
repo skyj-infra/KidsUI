@@ -34,20 +34,15 @@ export default function Navbar() {
       {/* Desktop Menu */}
       <div className="hidden lg:flex items-center gap-10 text-white font-medium z-[200]">
 
-        <div className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
-          <Info size={20} />
-          <span>About us</span>
-        </div>
-
         <Link  href="/locations"  className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
           <MapPin size={20} />
           <span>Locations</span>
         </Link >
 
-        <div className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
+        <Link href="/school-trip" className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
           <Home size={20} />
           <span>School Trip</span>
-        </div>
+        </Link>
 
         <Link href="/birthday-page" className="flex items-center gap-2 cursor-pointer hover:text-orange-400">
           <Cake size={20} />
@@ -78,18 +73,14 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       {open && (
         <div className="absolute rounded-[20px] top-16 left-0 w-full bg-[#0b0b14] text-white flex flex-col gap-4 px-6 py-4 lg:hidden shadow-lg">
-          <div className="flex items-center gap-2 border-b border-gray-700 pb-3">
-            <Info size={20} />
-            <span className="text-lg">About us</span>
-          </div>
           <Link href="/locations" className="flex items-center gap-2 border-b border-gray-700 pb-3">
             <MapPin size={20} />
             <span className="text-lg">Locations</span>
           </Link>
-          <div className="flex items-center gap-2 border-b border-gray-700 pb-3">
+          <Link href="/school-trip" className="flex items-center gap-2 border-b border-gray-700 pb-3">
             <Home size={20} />
             <span className="text-lg">School Trip</span>
-          </div>
+          </Link>
           <Link href="/birthday-page" className="flex items-center gap-2">
             <Cake size={20} />
             <span className="text-lg">Birthday Party</span>

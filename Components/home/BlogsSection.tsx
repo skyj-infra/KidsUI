@@ -27,7 +27,7 @@ export default function BlogsSection() {
     >
       {/* Heading */}
       <div className="text-center lg:mt-16 mb-6">
-        <h1 className="text-white text-2xl md:text-[46px] font-bold">OUR</h1>
+        <h1 className="text-white text-3xl md:text-[46px] font-bold">OUR</h1>
         <h2 className="text-orange-500 text-4xl md:text-[44px] font-extrabold -mt-1">
           Blogs
         </h2>

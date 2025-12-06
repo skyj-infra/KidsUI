@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 export default function WhyPartyTable() {
+
+    const pathname = usePathname();
+    const isschool = pathname === "/school-trip";
+    
+
   const rows = [
     {
       feature: "LOCATION & VENUE",
@@ -31,7 +37,7 @@ export default function WhyPartyTable() {
   ];
 
   return (
-    <section className="w-full max-w-[1500px] mx-auto lg:px-15 py-24 lg:py-18 flex flex-col items-center">
+    <section className={`w-full max-w-[1500px] ${isschool ? "py-16" : "py-24"} mx-auto lg:px-15 lg:py-18 flex flex-col items-center`}>
 
       {/* Heading */}
       <div className="text-center mb-6">

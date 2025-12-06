@@ -1,27 +1,37 @@
 "use client";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 
 export default function TrampolinePark() {
+    const pathname = usePathname();
+    const isschool = pathname === "/school-trip";
+
 
 
   return (
     <section
-      className ="relative w-full py-20 lg:px-10 h-[1400px] pt-[6rem] lg:pt-8 lg:h-full text-center  bg-[url('/images/bg-cloud-mobile-bday14.png')] /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat"
+      className ={`relative w-full py-20 lg:px-10 pt-[6rem] lg:pt-8 lg:h-full text-center
+      ${isschool ? "h-[1380px] bg-[url('/images/bg-cloud-mobile-bday.png')]" : " h-[1400px] bg-[url('/images/bg-cloud-mobile-bday14.png')]"}   /* desktop default */  md:bg-[url('/images/bg-whykids.jpg')] bg-cover bg-center bg-no-repeat`}
    >
 
-      {/* ========== TOP ASTRONAUT (conditional) ========== */}
-      <div
+
+       {/* ========== TOP ASTRONAUT (conditional) ========== */}
+        <div
         className="w-[200px] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-10 lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0"
-           >
+        >
         <Image
-          src="/images/characters/Space Character 7.png"
-          alt="astronaut"
-          width={250}
-          height={250}
-          className="mt-4 lg:-mt-4"
+            src={
+            isschool
+                ? "/images/characters/Space Character 2.png" 
+                : "/images/characters/Space Character 7.png"
+            }
+            alt="astronaut"
+            width={250} 
+            height={250} 
+            className="mt-4 lg:-mt-4"
         />
-      </div>
+        </div>
 
       {/* ========= HEADING ========= */}
       <div className="text-center mt-28 lg:mt-6">
@@ -74,17 +84,18 @@ export default function TrampolinePark() {
           </div>
 
           <Image
-            src="/images/birthday-img/win-boy-img-n.png"
+            src={
+            isschool
+                ? "/images/2kids-img-new.png" 
+                : "/images/birthday-img/win-boy-img-n.png"
+            }
             alt="kids"
             width={170}
             height={200}
-            className="
-              rounded-xl 
-              -mb-12 lg:mb-1 -mr-4 lg:-mr-8 
-              lg:w-[220px] lg:h-[210px]
-              drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]
-            "
-          />
+            className={ isschool 
+                ? "rounded-xl -mb-8 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"
+                : "rounded-xl -mb-12 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"}
+           />
         </div>
 
 
@@ -115,16 +126,17 @@ export default function TrampolinePark() {
           </div>
 
           <Image
-            src="/images/birthday-img/school-kids-n.png"
+            src={
+            isschool
+                ? "/images/2kids-img-new.png" 
+                : "/images/birthday-img/school-kids-n.png"
+            }
             alt="kids"
             width={170}
             height={200}
-            className="
-              rounded-xl 
-              -mb-4 lg:mb-1 -mr-4 lg:-mr-8 
-              lg:w-[220px] lg:h-[210px]
-              drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]
-            "
+            className={ isschool 
+                ? "rounded-xl -mb-8 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"
+                : "rounded-xl -mb-4 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"}
           />
         </div>
 
@@ -155,17 +167,18 @@ export default function TrampolinePark() {
           </div>
 
           <Image
-            src="/images/birthday-img/boy-handup-n.png"
+            src={
+            isschool
+                ? "/images/2kids-img-new.png" 
+                : "/images/birthday-img/boy-handup-n.png"
+            }
             alt="kids"
             width={130}
             height={200}
-            className="
-              rounded-xl p-2 lg:p-0
-              -mb-14 lg:-mb-4 lg:-mr-8 
-              lg:w-[220px] lg:h-[210px]
-              drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]
-            "
-          />
+            className={ isschool 
+                ? "rounded-xl -mb-9 lg:mb-1 -mr-4 lg:-mr-8 w-[158px] lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"
+                : "rounded-xl p-2 lg:p-0 -mb-14 lg:-mb-4 lg:-mr-8 lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"}
+            />
         </div>
 
         {/* CARD 4 */}
@@ -195,17 +208,18 @@ export default function TrampolinePark() {
           </div>
 
           <Image
-            src="/images/birthday-img/two-girls-n.png"
+            src={
+            isschool
+                ? "/images/2kids-img-new.png" 
+                : "/images/birthday-img/two-girls-n.png"
+            }
             alt="kids"
             width={140}
             height={200}
-            className="
-              rounded-xl 
-              -mb-4 lg:mb-1 -mr-4 lg:-mr-8 
-              lg:w-[220px] lg:h-[210px]
-              drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]
-            "
-          />
+            className={ isschool 
+                ? "rounded-xl -mb-9 lg:mb-1 -mr-4 lg:-mr-8 w-[158px] lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"
+                : "rounded-xl -mb-4 lg:mb-1 -mr-4 lg:-mr-8 lg:w-[220px] lg:h-[210px] drop-shadow-[0_10px_15px_rgba(0,0,0,0.7)]"}
+            />
         </div>
 
       </div>
@@ -219,7 +233,11 @@ export default function TrampolinePark() {
           "
         >
           <Image
-            src="/images/characters/Space Character 6.png"
+            src={
+            isschool
+                ? "/images/characters/Space Character 10.png" 
+                : "/images/characters/Space Character 6.png"
+            }
             alt="astronaut"
             width={250}
             height={250}

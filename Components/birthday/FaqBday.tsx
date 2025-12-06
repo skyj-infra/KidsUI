@@ -2,8 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function FAQBday() {
+    const pathname = usePathname();
+    const isschool = pathname === "/school-trip";
+
+
   const faqData = [
     {
       id: 1,
@@ -34,20 +39,24 @@ export default function FAQBday() {
       className="relative w-full py-16 pb-20 lg:pb-20 px-6 h-full lg:pt-8 lg:h-full text-center"
 >
     {/* ========== TOP ASTRONAUT (conditional) ========== */} 
+    {!isschool && (
     <div
-    className="w-[220px] mt-6 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-10 lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0"
-        >
-    <Image
-        src={ "/images/characters/Space Character 3.png" }
+        className="w-[220px] mt-6 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-10 
+                lg:top-10 lg:left-10 lg:translate-x-0 lg:-translate-y-0"
+    >
+        <Image
+        src="/images/characters/Space Character 3.png"
         alt="astronaut"
         width={250}
         height={250}
-        className= "-mt-8"
-    />
+        className="-mt-8"
+        />
     </div>
+    )}
+
 
       {/* ----------------- Heading ----------------- */}
-      <div className="text-center mt-24 lg:mt-0 pt-10 max-w-[1500px] mx-auto">
+      <div className={`text-center lg:mt-0 pt-10 ${isschool ? "mt-0" : "mt-24"} max-w-[1500px] mx-auto`}>
         <h2 className="text-orange-500 text-4xl md:text-[46px] font-extrabold">FAQs</h2>
         <div className="h-1 w-24 bg-black mx-auto mt-2 rounded-full" />
 
